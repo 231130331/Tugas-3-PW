@@ -219,7 +219,11 @@ header .latar span {
         display: none;
     }
 }
-
+@media (max-width: 480px) {
+    .nav {
+        width: 50px;
+    }
+}
 /*main*/
 .main {
     float: left;
@@ -278,7 +282,7 @@ header .latar span {
 
 .main section .rating .judul {
     width: 100%;
-    font-size: 24px;
+    font-size: 28px;
     color: rgb(163, 162, 164);
 }
 .main section .rating li {
@@ -302,6 +306,9 @@ header .latar span {
     .main section .penjualan li{
         font-size: 32px;
     }
+    .main section .rating .judul {
+        font-size: 32px;
+    }
 }
 @media (max-width: 992px) {
     .main {
@@ -312,6 +319,9 @@ header .latar span {
         left: 260px;
     }
     .main section .penjualan li{
+        font-size: 28px;
+    }
+    .main section .rating .judul {
         font-size: 28px;
     }
 }
@@ -329,6 +339,41 @@ header .latar span {
     }
     .main section .penjualan li a {
         font-size: 18px;
+    }
+    .main section .rating .judul {
+        font-size: 24px;
+    }
+    .main section .rating li {
+        font-size: 18px;
+    }
+    .main section .rating span img {
+        width: 17px;
+        height: 17px;
+    }
+}
+@media (max-width: 480px) {
+    .main {
+        float: none;
+        width: calc(80% - 60px);
+    }
+    .main section {
+        left: 100px;
+    }
+    .main section .penjualan li{
+        font-size: 20px;
+    }
+    .main section .penjualan li a {
+        font-size: 12px;
+    }
+    .main section .rating .judul {
+        font-size: 20px;
+    }
+    .main section .rating li {
+        font-size: 16px;
+    }
+    .main section .rating span img {
+        width: 15px;
+        height: 15px;
     }
 }
 
@@ -391,6 +436,8 @@ header .latar span {
     display: flex;
     justify-content: center;
     margin: 15px 0;
+    font-size: 18px;
+    color: rgb(59, 58, 61);
 }
 .aside section .penjualan li .data {
     width: 100%;
@@ -423,6 +470,7 @@ header .latar span {
     display: flex;
     justify-content: center;
     margin: 20px 0;
+    color: rgb(59, 58, 61);
 }
 .aside section .like li {
     display: flex;
@@ -435,23 +483,46 @@ header .latar span {
     border-radius: 5px;
 }
 .like .item .likes {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: red;
 }
 
 .like .item .heart {
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
 }
 @media (max-width: 1200px) {
     .aside {
         float: none;
         width: calc(90% - 250px);
     }
-
     .aside section {
         left: 330px;
+    }
+    .aside section .penjualan .judul {
+        font-size: 28px;
+    }
+    .aside section .penjualan li {
+        font-size: 20px;
+    }
+    .aside section .date span {
+        font-size: 26px;
+    }
+    .aside section .date img {
+        width: 29px;
+        height: 29px;
+    }
+    .aside .like .judul {
+        font-size: 28px;
+    }
+    .like .item .likes {
+        font-size: 24px;
+    }
+    
+    .like .item .heart {
+        width: 18px;
+        height: 18px;
     }
 }
 
@@ -460,9 +531,32 @@ header .latar span {
         float: none;
         width: calc(90% - 250px);
     }
-
     .aside section {
         left: 300px;
+    }
+    .aside section .penjualan .judul {
+        font-size: 26px;
+    }
+    .aside section .penjualan li {
+        font-size: 18px;
+    }
+    .aside section .date span {
+        font-size: 22px;
+    }
+    .aside section .date img {
+        width: 25px;
+        height: 25px;
+    }
+    .aside .like .judul {
+        font-size: 26px;
+    }
+    .like .item .likes {
+        font-size: 22px;
+    }
+    
+    .like .item .heart {
+        width: 16px;
+        height: 16px;
     }
 }
 
@@ -471,8 +565,64 @@ header .latar span {
         float: none;
         width: calc(80% - 60px);
     }
-
     .aside section {
-        left: 160px;
+        left: 150px;
+    }
+    .aside section .penjualan .judul {
+        font-size: 24px;
+    }
+    .aside section .penjualan li {
+        font-size: 16px;
+    }
+    .aside section .date span {
+        font-size: 16px;
+    }
+    .aside section .date img {
+        width: 23px;
+        height: 23px;
+    }
+    .aside .like .judul {
+        font-size: 24px;
+    }
+    .like .item .likes {
+        font-size: 18px;
+    }
+    
+    .like .item .heart {
+        width: 12px;
+        height: 12px;
+    }
+}
+@media (max-width: 480px) {
+    .aside {
+        float: none;
+        width: calc(80% - 60px);
+    }
+    .aside section {
+        left: 120px;
+    }
+    .aside section .penjualan .judul {
+        font-size: 18px;
+    }
+    .aside section .penjualan li {
+        font-size: 12px;
+    }
+    .aside section .date span {
+        font-size: 14px;
+    }
+    .aside section .date img {
+        width: 17px;
+        height: 17px;
+    }
+    .aside .like .judul {
+        font-size: 22px;
+    }
+    .like .item .likes {
+        font-size: 14px;
+    }
+    
+    .like .item .heart {
+        width: 10px;
+        height: 10px;
     }
 }
