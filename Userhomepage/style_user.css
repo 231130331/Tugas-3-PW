@@ -2,7 +2,6 @@
     width: 1366px;
     font-family:'inter', sans-serif ;
     background-color: rgb(238, 239, 240);
-    flex-direction: column;
     margin: 0;
 }
 
@@ -116,6 +115,7 @@ header .latar span {
     padding: 20px 20px;
     font-weight: bold;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 .nav .channel {
     width: 100%;
@@ -153,11 +153,13 @@ header .latar span {
     height: 150px;
 }
 .nav .bantuan{
+    width: 100%;
+    height: 150px;
     border-top: 2px solid rgb(164, 164, 164);
 }
 .nav .bantuan .help {
-    font-weight:bold;
     width: 100%;
+    font-weight:bold;
 }
 .nav  .home{
     background-color: white;
