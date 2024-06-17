@@ -228,16 +228,23 @@ body{
     width: 100px;
 }
 
-.content2 .tengah2 .kuantitas1 table{
+.content2 .tengah2 .kuantitas1 table,
+.content2 .tengah2 .kuantitas2 table,
+.content2 .tengahbawah .kuantitas3 table{
     border-collapse: collapse;
 }
-.content2 .tengah2 .kuantitas1 td{
+
+.content2 .tengah2 .kuantitas1 td,
+.content2 .tengah2 .kuantitas2 td,
+.content2 .tengahbawah .kuantitas3 td{
     width: 50px;
     padding-left: 5px;
     color: grey;
 }
 
-.content2 .tengah2 .kuantitas1 img{
+.content2 .tengah2 .kuantitas1 img,
+.content2 .tengah2 .kuantitas2 img,
+.content2 .tengahbawah .kuantitas3 img{
     float: right;
     width: 10px;
     padding-right: 5px;
@@ -249,22 +256,6 @@ body{
     border-radius: 5px;
     width: 100px;
     margin-top: 5px;
-}
-
-.content2 .tengah2 .kuantitas2 table{
-    border-collapse: collapse;
-
-}
-.content2 .tengah2 .kuantitas2 td{
-    width: 50px;
-    padding-left: 5px;
-        color: grey;
-}
-
-.content2 .tengah2 .kuantitas2 img{
-    float: right;
-    width: 10px;
-    padding-right: 5px;
 }
 
 .content2 .tengahbawah {
@@ -295,21 +286,6 @@ body{
     float: right;
 }
 
-.content2 .tengahbawah .kuantitas3 table{
-    border-collapse: collapse;
-}
-.content2 .tengahbawah .kuantitas3 td{
-    width: 50px;
-    padding-left: 5px;
-    color: grey;
-}
-
-.content2 .tengahbawah .kuantitas3 img{
-    float: right;
-    width: 10px;
-    padding-right: 5px;
-}
-
 .content2 .tengahbawah input[type="checkbox"]{
     margin-left: 15px;
 }
@@ -335,116 +311,9 @@ body{
     margin: 0px;
 }
 
-.content3 .landing{
-    width: 170px;
-    height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    margin-left: 15px;
-    border-radius: 15px;
-    margin-top: 5px;
-}
-
-.content3 .landing .kotak{
-    width: 18px;
-    height: 18px;
-    background-color: grey;
-    border-radius: 60px;
-    float: left;
-}
-
-.content3 .landing .pemanggil p{
-    margin-top: 1px;
-    margin-left: 30px;
-}
-
-.content3 .landing .pemanggil{
-    padding: 5px;
-}
-
-.content3 .landing{
-    width: 170px;
-    height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
-    margin-left: 15px;
-    border-radius: 15px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-.content3 .landing .kotak{
-    width: 18px;
-    height: 18px;
-    background-color: grey;
-    border-radius: 60px;
-    float: left;
-}
-
-.content3 .landing .pemanggil p{
-    margin-top: 1px;
-    margin-left: 30px;
-}
-
-.content3 .landing .pemanggil{
-    padding: 5px;
-}
-
-.content3 .storefront{
-    width: 170px;
-    height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
-    margin-left: 15px;
-    border-radius: 15px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-.content3 .storefront .kotak{
-    width: 18px;
-    height: 18px;
-    background-color: grey;
-    border-radius: 60px;
-    float: left;
-}
-
-.content3 .storefront .pemanggil p{
-    margin-top: 1px;
-    margin-left: 30px;
-}
-
-.content3 .storefront .pemanggil{
-    padding: 5px;
-}
-
-.content3 .funnel{
-    width: 170px;
-    height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
-    margin-left: 15px;
-    border-radius: 15px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-.content3 .funnel .kotak{
-    width: 18px;
-    height: 18px;
-    background-color: grey;
-    border-radius: 60px;
-    float: left;
-}
-
-.content3 .funnel .pemanggil p{
-    margin-top: 1px;
-    margin-left: 30px;
-}
-
-.content3 .funnel .pemanggil{
-    padding: 5px;
-}
-
+.content3 .landing,
+.content3 .storefront,
+.content3 .funnel,
 .content3 .form{
     width: 170px;
     height: 30px;
@@ -453,8 +322,12 @@ body{
     margin-left: 15px;
     border-radius: 15px;
     margin-top: 5px;
+    margin-bottom: 10px;
 }
 
+.content3 .landing .kotak,
+.content3 .storefront .kotak,
+.content3 .funnel .kotak,
 .content3 .form .kotak{
     width: 18px;
     height: 18px;
@@ -463,12 +336,18 @@ body{
     float: left;
 }
 
+.content3 .landing .pemanggil p,
+.content3 .storefront .pemanggil p,
+.content3 .funnel .pemanggil p,
 .content3 .form .pemanggil p{
     margin-top: 1px;
     margin-left: 30px;
 }
 
-.content3 .form .pemanggil{
+.content3 .landing .pemanggil,
+.content3 .storefront .pemanggil,
+.content3 .funnel .pemanggil,
+.content3 .form .pemanggil {
     padding: 5px;
 }
 
@@ -569,14 +448,15 @@ body{
 }
 
 @media screen and (max-width:480px) {
-    .container {
-        flex-direction: column;
+    body{
+        width: 480px;
     }
 
     .content1,
     .content2,
     .content3 {
         width: 100%;
+        margin-left: 25px;
     }
 
     .content1 .status,
@@ -604,22 +484,23 @@ body{
         margin-right: 20px;
     }
 
-.content3{
-    margin-top: 15px;
-}
+    .content3{
+        margin-top: 15px;
+        
+    }
 
     .content3 .kananatas,
     .content3 .kanantengah,
     .content3 .kananbawah{
         float: none;
-        margin-left: 20px;
+        margin-left: 35px;
         margin-right: 0px;
         width: 430px;
     }
 
     .content3 .kirim{
         float: none;
-        margin-left: 345px;
+        margin-left: 380px;
     }
     
 }
