@@ -12,12 +12,12 @@ body{
     width: 24%;
 }
 
-.content1 .editor img{
+.content1 .Editor img{
     width: 20px;
     float: left;
 }
 
-.content1 .editor p {
+.content1 .Editor p {
     padding-left: 25px;
     color: rgb(43, 42, 42);
 }
@@ -89,7 +89,8 @@ body{
     padding-top: 5px;
 }
 
-.content2 .tengahatas .top p{
+.content2 .tengahatas .top p,
+.content2 .tengah_tengah .mid p{
     padding-left: 15px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -125,25 +126,20 @@ body{
     padding-top: 5px;
 }
 
-.content2 .tengah_tengah .mid p{
-    padding-left: 15px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
 .content2 .tengah_tengah .img1 img{
     padding-top: 5px;
     padding-left: 15px;
     width: 16px;
     float: left;
-    clear: fixed;
+    
 }
 
-.content2 .tengah_tengah .img1 p{
+.content2 .tengah_tengah .img1 p,
+.content2 .tengah_tengah .sekolah p{
     padding-left: 5px;
     width: 16px;
     float: left;
-    clear: fixed;
+    
 }
 
 .content2 .tengah_tengah .sekolah img{
@@ -151,14 +147,6 @@ body{
     padding-left: 35px;
     width: 16px;
     float: left;
-    clear: fixed;
-}
-
-.content2 .tengah_tengah .sekolah p{
-    padding-left: 5px;
-    width: 16px;
-    float: left;
-    clear: fixed;
 }
 
 .content2 .tengah_tengah .mid .img2 img{
@@ -456,7 +444,7 @@ body{
     .content2,
     .content3 {
         width: 100%;
-        margin-left: 25px;
+        margin-left: 30px;
     }
 
     .content1 .status,
@@ -493,7 +481,7 @@ body{
     .content3 .kanantengah,
     .content3 .kananbawah{
         float: none;
-        margin-left: 35px;
+        margin-left: 40px;
         margin-right: 0px;
         width: 430px;
     }
@@ -503,4 +491,4 @@ body{
         margin-left: 380px;
     }
     
-}
+}   
