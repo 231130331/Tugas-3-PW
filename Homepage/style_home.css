@@ -1,27 +1,10 @@
 .container{
-    width: 1366px;
+    width: 1440px;
 }
-@media (max-width: 1200px){
+@media (max-width: 1440px){
 
     .container{
         width: 100%;
-    }
-}
-
-@media (max-width: 992px) {
-    .container{
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .container{
-        width: 100%;
-    }
-}
-@media (max-height:768px){
-    .countainer {
-        height: 100%;
     }
 }
 
@@ -572,14 +555,14 @@
     .main .bagian-1 .input .enter {
         height: 65px;
         line-height: 65px;
-        width: 50%;
-        margin-left: 25%;
+        width: 60%;
+        margin-left: 20%;
     }
     .main .bagian-1 .input .klik {
         height: 65px;
         line-height: 65px;
-        width: 50%;
-        margin-left: 25%;
+        width: 60%;
+        margin-left: 20%;
     }
     .main .bagian-1 .pemanis{
         font-size: 15px;
@@ -671,5 +654,21 @@
     .footer {
         top: 20px;
         font-size: 18px;
+        
     }
+}
+@media(max-width:440px){
+    .nav .item .start{
+        display: none;
+    
+    }
+    .nav .item .login{
+        margin-right: 50px;
+    }
+    .nav .item .login a{
+        float: none;
+        margin-right: 30px;
+        text-align: center;
+    }
+
 }
