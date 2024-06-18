@@ -140,6 +140,7 @@ header .latar span {
 }
 .nav .channel {
     width: 100%;
+    margin-top: 20px;
 }
 .nav .fitur {
     width:78%;
@@ -162,6 +163,9 @@ header .latar span {
     color: rgb(53, 68, 79);
     text-decoration: none;
 }
+.sales a{
+    color: rgba(164, 164, 164, 1) !important;
+}
 .nav li .gambar {
     width: 20px;
     height: 20px;
@@ -169,6 +173,7 @@ header .latar span {
 }
 .nav .sales {
     text-indent: 40px;
+
 }
 .nav .box{
     height: 135px;
@@ -237,7 +242,6 @@ header .latar span {
         width: 50px;
     }
 }
-/*main*/
 .main {
     float: left;
     width: 36.92%;
@@ -270,6 +274,9 @@ header .latar span {
 .main section .penjualan li{
     list-style-type: none;
     font-size: 28px;
+}
+.main section .penjualan li a{
+    font-weight: 300;
 }
 .main section .penjualan .inline{
     float: left;
@@ -319,18 +326,7 @@ header .latar span {
     .main {
         width: 34.92%;
     }
-/*   
-    .main {
-        float: none;
-        width: calc(90% - 260px);
-    }
-    .main section .penjualan li{
-        font-size: 32px;
-    }
-    .main section .rating .judul {
-        font-size: 32px;
-    }
-*/
+
 }
 
 @media (max-width: 992px) {
@@ -400,7 +396,6 @@ header .latar span {
     }
 }
 
-/*aside*/
 .aside {
     float: left;
     width: 37.25%;
@@ -505,6 +500,9 @@ header .latar span {
     height: 100%;
     border-radius: 5px;
 }
+.item{
+    margin-left: 30px;
+}
 .like .item .likes {
     font-size: 20px;
     font-weight: bold;
@@ -523,36 +521,7 @@ header .latar span {
     .aside section {
     top: 70px;
     }
-/*
-    .aside {
-        float: none;
-        width: calc(90% - 250px);
-    }
-    .aside section .penjualan .judul {
-        font-size: 28px;
-    }
-    .aside section .penjualan li {
-        font-size: 20px;
-    }
-    .aside section .date span {
-        font-size: 26px;
-    }
-    .aside section .date img {
-        width: 29px;
-        height: 29px;
-    }
-    .aside .like .judul {
-        font-size: 28px;
-    }
-    .like .item .likes {
-        font-size: 24px;
-    }
-    
-    .like .item .heart {
-        width: 18px;
-        height: 18px;
-    }
-*/
+
 }
 
 @media (max-width: 992px) {
