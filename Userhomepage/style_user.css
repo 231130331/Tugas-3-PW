@@ -1,32 +1,14 @@
 .container {
-    width: 1366px;
+    width: 1440px;
     font-family:'inter', sans-serif ;
     background-color: rgb(238, 239, 240);
     margin: 0;
 }
 
-@media (max-width: 1366px){
-
+@media (max-width: 1440px){
     .container{
         width: 100%;
     }
-}
-    
-@media (max-width: 992px) {
-    .container{
-        width: 100%;
-    }
-}
-    
-@media (max-width: 768px) {
-    .container{
-        width: 100%;
-    }
-}
-@media (max-height:768px){
-   .countainer {
-        height: 100%;
-   }
 }
 /*header*/
 .header {
@@ -76,7 +58,7 @@ header .latar span {
 .header .akun {
     color: white;
     background-color: rgb(53, 68, 79);
-    height: 50px;
+    height: 55px;
     display: flex;
     align-items: center;
     margin-left: 20px;
@@ -84,9 +66,9 @@ header .latar span {
     border-radius: 20px;
 }
 .header .akun .profil {
-    margin: 0 10px;
+    margin: 0 12px;
     background-color: chocolate;
-    padding: 5px 15px;
+    padding: 5px 14px;
     border-radius: 100%;
     border: 2px solid white;
 }
@@ -99,6 +81,45 @@ header .latar span {
     }
     .header .akun .kata{
         display: none;
+    }
+}
+@media (max-width: 1200px){
+    .header{
+        height: 70px;
+    }
+    header .latar span {
+        color: white;
+        font-size: 13px;
+    }
+    .header .latar {
+        height: 35px;
+        border-radius: 15px;
+    }
+    .header .logo {
+        width: 40px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    .header .latar img {
+        width: 20px;
+        height: 20px;
+        margin: 0 10px;
+    }
+    .header .akun .profil {
+        margin: 5px;
+        background-color: chocolate;
+        padding: 3px 12px;
+
+    }
+    .header .akun {
+        height: 40px;
+        border-radius: 13px;
+    }
+    .header .bell {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        border-radius: 13px;
     }
 }
 
@@ -150,7 +171,7 @@ header .latar span {
     text-indent: 40px;
 }
 .nav .box{
-    height: 150px;
+    height: 135px;
 }
 .nav .bantuan{
     width: 100%;
@@ -171,19 +192,7 @@ header .latar span {
 }
 @media (max-width: 1200px){
     .nav {
-        width: 260px;
-    }
-    .nav section .fitur {
-        font-size: 20px;
-    }
-    .nav section li a {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 992px) {
-    
-    .nav {
+        top: 70px;
         width: 220px;
     }
     .nav section .fitur {
@@ -192,8 +201,10 @@ header .latar span {
     .nav section li a {
         font-size: 16px;
     }
+    .nav .box{
+        height: 155px;
+    }
 }
-
 @media (max-width: 768px) {
     .nav {
         width: 68px;
@@ -229,7 +240,7 @@ header .latar span {
 /*main*/
 .main {
     float: left;
-    width: 38.92%;
+    width: 36.92%;
     height: 30%;
     padding: 20px 5%;
 }
@@ -300,7 +311,15 @@ header .latar span {
     width: 25px;
     height: 25px;
 }
+
 @media (max-width: 1200px){
+    .main section {
+        top: 70px;
+    }
+    .main {
+        width: 34.92%;
+    }
+/*   
     .main {
         float: none;
         width: calc(90% - 260px);
@@ -311,7 +330,9 @@ header .latar span {
     .main section .rating .judul {
         font-size: 32px;
     }
+*/
 }
+
 @media (max-width: 992px) {
     .main {
         float: none;
@@ -382,7 +403,7 @@ header .latar span {
 /*aside*/
 .aside {
     float: left;
-    width: 39.75%;
+    width: 37.25%;
 }
 
 .aside section {
@@ -494,13 +515,18 @@ header .latar span {
     width: 14px;
     height: 14px;
 }
+
 @media (max-width: 1200px) {
+    .aside {
+        width: calc(100%-50px);
+    }
+    .aside section {
+    top: 70px;
+    }
+/*
     .aside {
         float: none;
         width: calc(90% - 250px);
-    }
-    .aside section {
-        left: 330px;
     }
     .aside section .penjualan .judul {
         font-size: 28px;
@@ -526,6 +552,7 @@ header .latar span {
         width: 18px;
         height: 18px;
     }
+*/
 }
 
 @media (max-width: 992px) {
@@ -574,7 +601,7 @@ header .latar span {
         font-size: 24px;
     }
     .aside section .penjualan li {
-        font-size: 16px;
+        font-size: 14px;
     }
     .aside section .date span {
         font-size: 16px;
