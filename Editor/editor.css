@@ -1,200 +1,129 @@
-body{
+.container{
     background-color: rgba(238, 239, 240, 1);
-    width: 1366px;
-    height: 768px;
-    margin: 0px;
-    font-family: 'Inter';
+    width: 1440px;
+    font-family:'inter', sans-serif;
+}
+@media (max-width: 1440px){
+    .container{
+        width: 100%;
+    }
 }
 
+nav {
+    background-color: rgba(238, 239, 240, 1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+nav article {
+    width: 90%;
+    display: flex;
+}
+nav .Editor img{
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    top: 40px;
+    display: flex;
+}
+main .content1,
+main .content2 {
+    margin-right: 25px;
+}
 .content1{
     float: left;
-    margin-left: 18px;
-    margin-right: 10px;
-    width: 24%;
+    width: 25%; 
 }
-
-.content1 .Editor img{
-    width: 20px;
-    float: left;
+.content1 .status {
+    padding: 8px 5%;
 }
-
-.content1 .Editor p {
-    padding-left: 25px;
-    color: rgba(91, 90, 93, 1)
-}
-
-.content1 .status{
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 5px;
-    margin: 5px 0;
+section article {
+    width: 90%;
+    padding: 10px 5%;
     background-color: white;
-}
-
-.content1 .status p{
-    padding-left: 10px;
-}
-
-.content1 .seo{
-    width: 100%;
-    height: 325px;
-    margin: 10px 0;
+    margin-bottom: 10px;
     border-radius: 5px;
-    background-color: white;
 }
-
-.content1 .seo p{
-    padding-left: 10px;
-    padding-top: 5px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+.content1 .seo input[type="text"] {
+    width: 100%;
+    height : 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
-
 .content1 .seo textarea{
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    margin-left: 10px;
-    width: 90%;
+    width: 100%;
     height: 100px;
 }
-
-.content1 .seo input[type="text"] {
-    width: 90%;
-    height :25px;
-    margin-left: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+@media (max-width: 992px) {
+    .content1 {
+        width: 100%;
+        float: none;
+    }
 }
-
-
+    
 .content2{
     float: left;
-    width: 41%;
-    margin-top: 50px;
-    margin-left: 15px;
-    margin-right: 10px;
+    width: 38%;
 }
-
-.content2 .tengahatas .top{
-    background-color: white;
-    width: 100%;
-    height: 275px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.content2 .tengahatas .top .text1{
-    padding-top: 5px;
-}
-
-.content2 .tengahatas .top p,
-.content2 .tengah_tengah .mid p{
-    padding-left: 15px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
 .content2 .tengahatas input[type="text"]{
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    margin-left: 15px;
-    width: 93%;
+    width: 100%;
     height: 20px;
 }
-
 .content2 .tengahatas textarea{
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    margin-left: 15px;
-    width: 93%;
+    width: 100%;
     height: 160px;
 }
 
-.content2 .tengah_tengah .mid{
-    background-color: white;
+.content2 .tengah_tengah input[type="text"]{
     width: 100%;
-    height: 150px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.content2 .tengah_tengah .text2{
-    padding-top: 5px;
-}
-
-.content2 .tengah_tengah .img1 img{
-    padding-top: 5px;
-    padding-left: 15px;
-    width: 18px;
-    float: left;
-    
-}
-
-.content2 .tengah_tengah .img1 p,
-.content2 .tengah_tengah .sekolah p{
-    padding-left: 5px;
-    width: 16px;
-    float: left;
-    
-}
-
-.content2 .tengah_tengah .sekolah img{
-    padding-top: 5px;
-    padding-left: 45px;
-    width: 18px;
-    float: left;
-}
-
-.content2 .tengah_tengah .mid .img2 img{
-    padding-left: 100px;
-    padding-top: 5px;
-}
-.content2 .tengah_tengah .mid input[type="text"]{
-    margin-left: 15px;
-    width: 93%;
     height: 20px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
-
+.content2 .posisi {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+.content2 .posisi img{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.content2 .posisi span {
+    margin-right: 10px;
+}
 .content2 .tengah2 {
-    background-color: white;
-    width: 100%;
-    height: 100px;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
-
 .content2 .tengah2 .varian{
-    float: left;
-    margin-left: 15px;
+    margin-right: 36%;
 }
-
-.content2 .tengah2 .text3{
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.content2 .tengah2 p{
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
 .content2 .tengah2 .harga{
-    float: left;
-    padding-left: 200px;
+    margin-right: 5%;
 }
-
-.content2 .tengah2 .text_harga{
-    padding-top: 5px;
-} 
-
 .content2 .tengah2 .harga input[type="text"]{
     height: 22px;
     width: 100px;
@@ -204,104 +133,70 @@ body{
     margin-bottom: 5px;
 }
 
-.content2 .tengah2 .kuantitas {
-    padding-top: 5px;
-    padding-left: 420px;
-}
-
-.content2 .tengah2 .kuantitas1{
+.content2 .kuantitas_ukuran{
+    height: 24px;
+    width: 100px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+.content2 .kuantitas_ukuran span {
+    width: 80%;
+    color: rgba(132, 132, 132);
+}
+.content2 .kuantitas_ukuran img{
+    width: 7px;
+    height: 15px;
+}
+.content2 .kuantitas_Ukuran{
+    height: 24px;
     width: 100px;
-}
-
-.content2 .tengah2 .kuantitas1 table,
-.content2 .tengah2 .kuantitas2 table,
-.content2 .tengahbawah .kuantitas3 table{
-    border-collapse: collapse;
-}
-
-.content2 .tengah2 .kuantitas1 td,
-.content2 .tengah2 .kuantitas2 td,
-.content2 .tengahbawah .kuantitas3 td{
-    width: 50px;
-    padding-left: 5px;
-    color: grey;
-}
-
-.content2 .tengah2 .kuantitas1 img,
-.content2 .tengah2 .kuantitas2 img,
-.content2 .tengahbawah .kuantitas3 img{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-bottom: 5px;
     float: right;
-    width: 10px;
+    display: flex;
+    align-items: center;
+}
+.content2 .tengahbawah .Inventory{
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.content2 .Inventory span {
+    width: 80%;
+    color: rgba(132, 132, 132);
+}
+.content2 .kuantitas_Ukuran img{
+    width: 7px;
+    height: 15px;
     padding-right: 5px;
 }
 
-.content2 .tengah2 .kuantitas2{
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    width: 100px;
-    margin-top: 5px;
+@media (max-width: 1200px) {
+    .content2 .tengah2 .varian{
+        margin-right: 26%;
+    }
 }
-
-.content2 .tengahbawah {
-    background-color: white;
-    width: 100%;
-    height: 118px;
-    border-radius: 5px;
+@media (max-width: 992px) {
+    .content2 {
+        float: none;
+        width: 100%;
+    }
 }
-
-.content2 .tengahbawah .inventory{
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
-.content2 .tengahbawah .inventory1{
-    padding-top: 3px;
-}
-
-.content2 .tengahbawah p{
-    padding-left: 15px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.content2 .tengahbawah .kuantitas3{
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    width: 100px;
-    margin-right: 40px;
-    margin-top: -10px;
-    float: right;
-}
-
-.content2 .tengahbawah input[type="checkbox"]{
-    margin-left: 15px;
-}
-
 .content3{
-    float: right;
-    width: 400px;
-    margin-top: 50px;
-    margin-right: 10px;
-    margin-left: 10px;
+    float: left;
+    width: 33%;
 }
-
-.content3 .kananatas{
-    width: 400px;
-    height: 205px;
-    border-radius: 5px;
-    background-color: white;
+.content3 .font-size {
+    font-size: 24px;
 }
-
-.content3 .jenis h2{
-    padding-left: 15px;
-    padding-top: 5px;
-    margin: 0px;
-}
-
 .content3 .landing,
 .content3 .storefront,
 .content3 .funnel,
@@ -310,59 +205,28 @@ body{
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
-    margin-left: 15px;
-    border-radius: 15px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    border-radius: 10px;
+    margin: 7px 0;
+    display: flex;
+    align-items: center;
 }
-
-.content3 .landing .kotak,
-.content3 .storefront .kotak,
-.content3 .funnel .kotak,
-.content3 .form .kotak{
+.content3 .lingkaran {
     width: 18px;
     height: 18px;
-    background-color: rgba(217, 217, 217, 1);
-    border-radius: 60px;
     float: left;
-    margin-top: 1px;
+    border: 3px solid rgb(217, 217, 217);
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 100%;
+    margin: 0 10px;
 }
 
-.content3 .landing .pemanggil p,
-.content3 .storefront .pemanggil p,
-.content3 .funnel .pemanggil p,
-.content3 .form .pemanggil p{
-    margin-top: 1px;
-    margin-left: 30px;
-}
-
-.content3 .landing .pemanggil,
-.content3 .storefront .pemanggil,
-.content3 .funnel .pemanggil,
-.content3 .form .pemanggil {
-    padding: 5px;
-}
-
-.content3 .kotak:hover{
+.content3 .lingkaran:hover{
     background-color: rgb(56, 226, 56);
 }
 
-.content3 .kanantengah{
-    width: 400px;
-    height: 210px;
-    background-color: white;
-    border-radius: 5px;
-}
-
-
-.content3 .kanantengah h2{
-    padding-left: 15px;
-    padding-top: 10px;
-}
-
 .content3 .kanantengah .gambar{
-    width: 300px;
-    height: 130px;
+    width: 100%;
+    height: 140px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -373,69 +237,64 @@ body{
     background-color: rgba(41, 191, 255, 0.24);
     width: 100px;
     height: 30px;
-    margin: 40px auto 10px;
+    margin: 50px auto 10px;
     color: rgba(2, 132, 226, 1);
     border-radius: 10px;
-}
-
-.content3 .kanantengah .add p{
-    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .content3 .kanantengah .drop{
     color: rgba(132, 132, 132, 1);
 }
 
 .content3 .kanantengah p{
-    margin: 0px;
-    text-align: center;
-    
+    display: flex;
+    justify-content: center;
 }
 
 .content3 .kananbawah{
-    width: 400px;
-    height: 160px;
+    width: 100%;
+    height:180px;
     background-color: white;
-    margin-top: 20px;
     border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
 }
 
 .content3 .kananbawah img{
-    margin-left: 15px;
-    margin-top: 30px;
-    width: 100px;
-    float: left;
+    margin: 30px 20px;
+    width: 30%;
+    height: 8vw;
     border-radius: 10px;
+    float: left;
 }
 
-.content3 .kananbawah .siber{
-    padding-top: 30px;
-    margin: 0px;
-    padding-left: 125px;
+.content3 .kananbawah .siber, 
+.content3 .kananbawah .versi,
+.content3 .kananbawah .umkum {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.content3 .kananbawah .siber {
+    margin-top: 30px;
 }
 
-.content3 .kananbawah .versi{
-    margin-top: -2px;
-    padding-left: 125px;
-    color: rgba(132, 132, 132, 1);
+.content3 .kananbawah .orange{
+    width: 100%;
 }
-
-.content3 .kananbawah .umkm{
-    padding-left: 125px;
-    padding-top: 8px;
-    color: rgba(132, 132, 132, 1);
-}
-
 .content3 .kananbawah .orange button{
     width: 85px;
     height: 25px;
     background-color: #212A31;
     color: white;
     border-radius: 10px;
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
     float: right;
-    margin-right: 10px;
-    margin-top: -10px;
 }
-
 .content3 .kirim{
     width: 110px;
     height: 30px;
@@ -443,64 +302,20 @@ body{
     color: white;
     border-radius: 10px;
     float: right;
-    margin-right: 4px;
-    margin-top: 28px;
+    margin-top: 35px;
+    margin-right: 20px;
+    align-self: flex-end;
 }
-
-@media screen and (max-width:480px) {
-    body{
-        width: 480px;
+@media (max-width: 992px) {
+    main {
+        display: contents;
     }
-
-    .content1,
-    .content2,
     .content3 {
+        float: none;
         width: 100%;
-        margin-left: 30px;
     }
-
-    .content1 .status,
-    .content1 .seo{
-        width: 430px;
+    .content3 .kananbawah img{
+        width: 20%;
+        height: 14vw;
     }
-
-    .content2{
-        margin-top: 15px;
-    }
-
-    .content2 .tengahatas,
-    .content2 .tengah_tengah,
-    .content2 .tengah2,
-    .content2 .tengahbawah{
-        width: 430px;
-    }
-
-    .content2 .tengah2 .kuantitas,
-    .content2 .tengah2 .harga{
-        margin-left: -110px;
-    }
-
-    .content2 .tengahbawah .kuantitas3{
-        margin-right: 20px;
-    }
-
-    .content3{
-        margin-top: 15px;
-        
-    }
-
-    .content3 .kananatas,
-    .content3 .kanantengah,
-    .content3 .kananbawah{
-        float: none;
-        margin-left: 40px;
-        margin-right: 0px;
-        width: 430px;
-    }
-
-    .content3 .kirim{
-        float: none;
-        margin-left: 380px;
-    }
-    
-}   
+}
