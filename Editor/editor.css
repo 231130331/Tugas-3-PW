@@ -191,6 +191,8 @@ section article {
 }
 @media (max-width: 992px) {
     .content2 {
+        position: relative;
+        top: 40px;
         float: none;
         width: 100%;
     }
