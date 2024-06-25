@@ -321,6 +321,8 @@ section article {
         display: contents;
     }
     .content3 {
+        position: relative;
+        margin-top: 50px;
         float: none;
         width: 100%;
     }
