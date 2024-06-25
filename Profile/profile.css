@@ -317,8 +317,12 @@
     justify-content: center;
     align-items: center;
     border: 1px solid rgb(208, 208, 208);
+    cursor: pointer;
 }
-.main .bagian-1 .edit :hover {
+.main .bagian-1 .edit .kata span {
+    display: flex;
+}
+.main .bagian-1 .edit :hover span {
     background-color: rgb(235, 235, 235);
     border: 1px solid black;
     height: 50px;
@@ -328,6 +332,7 @@
     justify-content: center;
     align-items: center;
 }
+
 @media (max-width: 992px){
     .main h1 {
         font-size: 28px;
@@ -349,6 +354,11 @@
     .main .bagian-1 img {
         width: 25px;
         height: 25px;
+    }
+    .main .bagian-1 .edit :hover span {
+        font-size: 20px;
+        height: 45px;
+        width: 120px;
     }
 }
 @media (max-width: 768px){
@@ -388,6 +398,11 @@
     }
     .main .bagian-1 .inline li {
         font-size: 12px;
+    }
+    .main .bagian-1 .edit :hover span{
+        font-size: 16px;
+        height: 35px;
+        width: 80px;
     }
 }
 @media (max-width: 480px){
