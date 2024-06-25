@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="editor.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
-<body>
+<body class="container">
+    <nav>
+        <article class="Editor">
+            <img src="../Bahan CSS/Icons/menu.png">
+            <b>Editor</b>
+        </article>
+    </nav>
     <main>
         <section class="content1">
-            <div class="Editor">
-                <img src="../Bahan CSS/Icons/menu.png">
-                <p><b>Editor</b></p>
-            </div>
-            <div class="status">
-                <p><b>Status</b>: Draft</p>
-            </div>
-            <div class="seo">
-                <p><b>SEO Settings</b></p>
+            <article class="status">
+                <b>Status : </b> Draft
+            </article>
+            <article class="seo">
+                <b>SEO Settings</b>
                 <p>Page tittle</p>
                 <input type="text">
                 <p>Deskripsi</p>
@@ -25,155 +28,128 @@
                 <br><br>
                 <input type="text">
                 <p><input type="checkbox">Optimisasi Otomatis</p>
-            </div>
+            </article>
         </section>
-        <div class="content2">
-            <section class="tengahatas">
+        <section class="content2">
+            <article class="tengahatas">
                 <div class="top">
                     <div class="text1">
-                        <p><b>Judul</b></p>
+                        <b class="jarak">Judul</b>
                     </div>
                     <input type="text">
-                    <p><b>Deskripsi</b></p>
+                        <b class="jarak">Deskripsi</b>
                     <textarea></textarea>
                 </div>
-            </section>
-            <section class="tengah_tengah">
-                <div class="mid">
-                    <div class="text2">
-                        <p><b>Jenis Produk</b></p>
-                    </div>
-                    <input type="text">
-                    <p><b>Tags</b></p>
-                    <input type="text">
-                    <div class="img1">
-                        <img src="../Bahan CSS/Icons/logo_tag.png">
-                        <p>Sepatu</p>
-                    </div>
-                    <div class="sekolah">
-                        <img src="../Bahan CSS/Icons/logo_tag.png">
-                        <p>Sekolah</p>
-                    </div>
+            </article>
+            <article class="tengah_tengah">
+                <div class="text2">
+                    <b>Jenis Produk</b>
                 </div>
-            </section>
-            <section class="tengah2">                  
-                    <section class="varian">
+                <input type="text">
+                    <b>Tags</b>
+                <input type="text">
+                <div class="posisi">
+                    <img src="../Bahan CSS/Icons/logo_tag.png">
+                    <span>Sepatu</span>
+                    <img src="../Bahan CSS/Icons/logo_tag.png">
+                    <span>Sekolah</span>
+                </div>
+            </article>
+            </article>
+            <article class="tengah2">                  
+                    <div class="varian">
                         <div class="text3">
                             <p><b>Varian</b></p>
                         </div>
                         <p>Putih</p>
                         <p>Hitam</p>
-                    </section>    
-                    <section class="harga">
+                    </div>
+                    <div class="harga">
                         <div class="text_harga">
                             <p><b>Harga</b></p>
                         </div>
                         <input type="text" placeholder="Rp.0.000">
                         <br>
                         <input type="text" placeholder="Rp.0.000">
-                    </section>
-                    <section class="kuantitas">
+                    </div>
+                    <div class="kuantitas">
                         <div class="text_kuantitas">
-                            <p><b>kuantitas</b></p>
+                            <p><b>Kuantitas</b></p>
                         </div>
-                        <div class="kuantitas1">
-                            <table>
-                                <tr>
-                                    <td rowspan="2">0</td>
-                                    <td><img src="../Bahan CSS/Icons/sort up.png"></td>
-                                </tr>
-                                <tr>
-                                    <td><img src="../Bahan CSS/Icons/sort down.png"></td>
-                                </tr>
-                            </table>
+                        <div class="kuantitas_ukuran">
+                            <span>0</span><img src="../Bahan CSS/Icons/resize.png" alt="resize">
                         </div>
-                        <div class="kuantitas2">
-                            <table>
-                                <tr>
-                                    <td rowspan="2">0</td>
-                                    <td><img src="../Bahan CSS/Icons/sort up.png"></td>
-                                </tr>
-                                <tr>
-                                    <td><img src="../Bahan CSS/Icons/sort down.png"></td>
-                                </tr>
-                            </table>
+                        <div class="kuantitas_ukuran">
+                            <span>0</span><img src="../Bahan CSS/Icons/resize.png" alt="resize">
                         </div>
-                    </section>
-            </section>
-            <section class="tengahbawah">
-                <section class="Inventory">
-                    <div class="inventory1">
-                        <p><b>Inventory</b></p>
                     </div>
-                    <div class="kuantitas3">
-                        <table>
-                            <tr>
-                                <td rowspan="2">0</td>
-                                <td><img src="../Bahan CSS/Icons/sort up.png"></td>
-                            </tr>
-                            <tr>
-                                <td><img src="../Bahan CSS/Icons/sort down.png"></td>
-                            </tr>
-                        </table>
+            </article>
+            <article class="tengahbawah">
+                <div class="inventory">
+                    <b>Inventory</b>
+                </div>
+                <div class="Inventory">
+                    <span>Stok Barang</span>
+                    <div class="kuantitas_Ukuran">
+                        <span>0</span>
+                        <img src="../Bahan CSS/Icons/resize.png" alt="resize">
                     </div>
-                    <p>Stok Barang</p>
-                </section>
-                <hr>
+                </div>
                 <input type="checkbox">Track Quantity
                 <br>
                 <input type="checkbox">Notifikasi saat produk habis
-            </section>
-        </div>
-        <div class="content3">
-            <section class="kananatas">
+            </article>
+        </section>
+        <section class="content3">
+            <article class="kananatas">
                 <div class="jenis">                   
-                    <h2>Jenis</h2>
+                    <b class="font-size">Jenis</b>
                 </div>
                 <div class="landing">
                     <div class="pemanggil">
-                        <div class="kotak"></div>
-                        <p>Landing Page</p>
+                        <div class="lingkaran"></div>
+                        <span>Landing </span>
                     </div>
                 </div>
                 <div class="storefront">
                     <div class="pemanggil">
-                        <div class="kotak"></div>
-                        <p>Store Front</p>
+                        <div class="lingkaran"></div>
+                        <span>Store Front</span>
                     </div>
                 </div>
                 <div class="funnel">
                     <div class="pemanggil">
-                        <div class="kotak"></div>
-                        <p>Funnel</p>
+                        <div class="lingkaran"></div>
+                        <span>Funnel</span>
                     </div>
                 </div>
                 <div class="form">
                     <div class="pemanggil">
-                        <div class="kotak"></div>
-                        <p>Form Order</p>
+                        <div class="lingkaran"></div>
+                        <span>Form Order</span>
                     </div>
                 </div>
-            </section>
-            <section class="kanantengah">
-                <h2>Gambar</h2>
+            </article>
+            <article class="kanantengah">
+                <b class="font-size">Gambar</b>
                 <div class="gambar">
                     <div class="add">
                         <p><b>Add Image</b></p>
                     </div>
-                    <p>Or drop an image to Upload</p>
+                    <p class="drop">Or drop an image to Upload</p>
                 </div>
-            </section>
+            </article>
             <section class="kananbawah">
                 <div class="orange">
                     <img src="../Bahan CSS/Gambar/background1.jpeg">
-                    <p class="siber"><b>Orange Siber</b></p>
-                    <p class="versi">Versi 1.12</p>
+                    <span class="siber"><b>Orange Siber</b></span>
+                    <span class="versi">Versi 1.12</span>
                     <p class="umkm">By E-UMKM</p>
                     <button type="submit">Ganti</button>
                 </div>
             </section>
             <button type="submit" class="kirim">Lanjutkan Edit</button>
-        </div>
+        </section>
     </main>
 </body>
 </html>
