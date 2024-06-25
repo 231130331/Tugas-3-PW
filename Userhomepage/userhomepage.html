@@ -8,36 +8,40 @@
 </head>
 <body class="container">
     <header class="header">
-         <img class="logo" src="../Bahan CSS/Userhomepage/logo.png" alt="logo">
+        <img class="logo" src="../Bahan CSS/Userhomepage/logo.png" alt="logo">
         <span class="merek">E-UMKM</span>
         <section class="latar">
             <img src="../Bahan CSS/Userhomepage/search.png" alt="search">
-            <span class="kata">Search</span>
+            <input type="text" placeholder="search">
         </section>
-        <img class="bell" src="../Bahan CSS/Userhomepage/bell.png" alt="bell">
+        <section class="img">
+            <img class="bell" src="../Bahan CSS/Userhomepage/bell.png" alt="bell">
+        </section>
         <section class="akun">
-            <span class="profil">j</span>
-            <span class="kata">Juan Uliana</span>
+            <a href="profile">
+                <span class="profil">j</span>
+                <span class="kata">Juan Uliana</span>
+            </a>
         </section>
     </header>
-    <nav class="nav">
+   <nav class="nav">
         <section class="channel">
             <span class="fitur">Home Channel</span><img class="jomblo" src="../Bahan CSS/Userhomepage/right.png" alt="right">
             <li><a href="userhomepage.html"><img class="gambar" src="../Bahan CSS/Userhomepage/home.png" alt="home"><span>Home</span></a></li>
-            <li><a href="#"><img class="gambar" src="../Bahan CSS/Userhomepage/people.png" alt="people"><span>Teams</span></a></li>
-            <li><a href="#"><img class="gambar" src="../Bahan CSS/Userhomepage/label.png" alt="label"><span>Orders</span></a></li>
-            <li><a href="#"><img class="gambar" src="../Bahan CSS/Userhomepage/chart bar.png" alt="chart bar"><span>Laporan</span></a></li>
+            <li><a href="Teams"><img class="gambar" src="../Bahan CSS/Userhomepage/people.png" alt="people"><span>Teams</span></a></li>
+            <li><a href="Orders"><img class="gambar" src="../Bahan CSS/Userhomepage/label.png" alt="label"><span>Orders</span></a></li>
+            <li><a href="Laporan"><img class="gambar" src="../Bahan CSS/Userhomepage/chart bar.png" alt="chart bar"><span>Laporan</span></a></li>
         </section>
         <section class="channel">
             <span class="fitur">Sales Channel</span><img class="jomblo" src="../Bahan CSS/Userhomepage/right.png" alt="right">
-            <li><a href="#"><img class="gambar" src="../Bahan CSS/Userhomepage/shop.png" alt="toko"><span>Toko Online</span></a></li>
-            <li class="sales"><a href="#">Tema</a></li>
-            <li class="sales"><a href="../Editor/editor.html">Editor</a></li>
+            <li><a href="TokoOnline"><img class="gambar" src="../Bahan CSS/Userhomepage/shop.png" alt="toko"><span>Toko Online</span></a></li>
+            <li class="Tema"><a href="#">Tema</a></li>
+            <li class="Editor"><a href="../Editor/editor.html">Editor</a></li>
         </section>
         <section class="box"></section>
         <section class="bantuan">
             <li class="help"><a href="#"><img class="gambar" src="../Bahan CSS/Userhomepage/help.png" alt="bantuan"><span>Bantuan</span></a></li> 
-        </section>    
+        </section>
     </nav>
     <main class="main">
         <section>
@@ -79,26 +83,18 @@
             </article>
             <article class="like">
                 <span class="judul">Produk Trending Kamu</span>
-                <li class="item">
-                    <div class="overlay">
-                        <img class="posisi" src="../Bahan CSS/Userhomepage/gambar1.jpg" alt="gambar">
-                        <span class="likes">29 <img class="heart" src="../Bahan CSS/Userhomepage/heart.png" alt="like"></span>
-                    </div>
-                    <div class="overlay">
-                        <img class="posisi" src="../Bahan CSS/Userhomepage/gambar2.jpg" alt="gambar">
-                        <span class="likes">24 <img class="heart" src="../Bahan CSS/Userhomepage/heart.png" alt="like"></span>
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="overlay">
-                        <img class="posisi" src="../Bahan CSS/Userhomepage/gambar3.png" alt="gambar">
-                        <span class="likes">20<img class="heart" src="../Bahan CSS/Userhomepage/heart.png" alt="like"></span>
-                    </div>
-                    <div class="overlay">
-                        <img class="posisi" src="../Bahan CSS/Userhomepage/gambar4.png" alt="gambar">
-                        <span class="likes">18 <img class="heart" src="../Bahan CSS/Userhomepage/heart.png" alt="like"></span>
-                    </div>
-                </li>
+                <div>
+                    <img class="posisi" src="../Bahan CSS/Userhomepage/gambar1.jpg" alt="gambar">
+                    <span class="likes">29 <img class="heart" src="../Bahan CSS/Userhomepage/heart.png" alt="like"></span>
+                    <img class="posisi" src="../Bahan CSS/Userhomepage/gambar2.jpg" alt="gambar">
+                    <span class="likes">24<img class="heart" src="../Bahan CSS/Userhomepage/heart.png" alt="like"></span>
+                </div>
+                <div class="jarak">
+                    <img class="posisi" src="../Bahan CSS/Userhomepage/gambar3.png" alt="gambar">
+                    <span class="likes">20<img class="heart" src="../Bahan CSS/Userhomepage/heart.png" alt="like"></span>
+                    <img class="posisi" src="../Bahan CSS/Userhomepage/gambar4.png" alt="gambar">
+                    <span class="likes">18 <img class="heart" src="../Bahan CSS/Userhomepage/heart.png" alt="like"></span>
+                </div>
             </article>            
         </section>
     </aside>

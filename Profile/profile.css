@@ -60,23 +60,39 @@
     color: white;
     font-size: 16px;
 }
+
 .header .bell {
-    width: 40px;
-    height: 40px;
-    padding: 7px;
+    margin-top: 3px;
     background-color: rgb(53, 68, 79);
+    width: 45px;
+    height: 45px;
+    padding: 5px;
     border-radius: 20px;
 }
-.header .akun {
-    color: white;
+.header .img :hover {
+    width: 45px;
+    height: 45px;
+    background-color: black;
+}
+.header .akun a {
     background-color: rgb(53, 68, 79);
-    height: 55px;
     display: flex;
     align-items: center;
-    margin-left: 20px;
-    font-size: 18px;
+    height: 56px;
+    text-decoration: none;
+    color: white;
     border-radius: 20px;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-bottom: 1px;
 }
+.header .akun .kata {
+    margin-right: 10px;
+} 
+.header .akun :hover {
+    background-color: rgb(12, 12, 12);
+}
+
 .header .akun .profil {
     margin: 0 12px;
     background-color: chocolate;
@@ -84,9 +100,6 @@
     border-radius: 100%;
     border: 2px solid white;
 }
-.header .akun .kata {
-    margin-right: 10px;
-} 
 @media (max-width: 1200px){
     .header .merek {
         display: none;
@@ -94,13 +107,10 @@
     .header .akun .kata{
         display: none;
     }
-}
-@media (max-width: 1200px){
     .header{
         height: 70px;
     }
     header .latar span {
-        color: white;
         font-size: 13px;
     }
     .header .latar {
@@ -119,12 +129,10 @@
     }
     .header .akun .profil {
         margin: 5px;
-        background-color: chocolate;
         padding: 3px 12px;
-
     }
-    .header .akun {
-        height: 40px;
+    .header .akun a {
+        height: 42px;
         border-radius: 13px;
     }
     .header .bell {
@@ -132,6 +140,10 @@
         height: 30px;
         padding: 5px;
         border-radius: 13px;
+    }
+    .header .img :hover {
+        width: 30px;
+        height: 30px;
     }
 }
 /*nav*/
@@ -193,7 +205,7 @@
     width: 100%;
     font-weight:bold;
 }
-.nav  .home{
+.nav .home{
     background-color: white;
     border-radius: 10px;
 }
