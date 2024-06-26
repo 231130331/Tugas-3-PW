@@ -22,31 +22,49 @@
 }
 .header section {
     padding-bottom: 10px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 .header section img {
     width: 150px;
     height: 120px;
 }
 .header h1 {
-    font-size: 36px;
+    font-size: 39px;
     font-weight: bold;
     font-family:'inter', sans-serif;
     display: flex;
     justify-content: center;
     color:  rgb(224, 208, 251);
 }
-@media (max-width: 768px) {
-    .header section img {
-        width: 130px;
-        height: 100px;
-    }
+@media (max-width: 1200px) {
     .header h1 {
         font-size: 32px;
     }
 }
-
+@media (max-width: 992px) {
+    .header h1 {
+        font-size: 28px;
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        height: 100px;
+        top: 70px;
+    }
+    .header section {
+        display: flex;
+        justify-content: center;
+    }
+    .header section img {
+        width: 100px;
+        height: 70px;
+    }
+}
+@media (max-width: 480px) {
+    .header section img {
+        display: none;
+    }
+}
 /*nav*/
 .nav{
     width: 100%;
@@ -55,53 +73,61 @@
     left: 0;
     position: fixed;
     background-color: white;
-    z-index: 9999;
-    transition: width 0.3s ease;
+    z-index: 9998;
     display: flex;
-    justify-content: center;
-    font-family: 'Inter';
+    align-items: center;
+    font-family:'inter', sans-serif;
 }
 .nav .item {
-    list-style-type: none;
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .nav .item li {
-    margin-left: 20px;
+    list-style-type: none;
+    margin-right: 20px;
     font-size: 22px;
-    font-weight: bold;
-    display: inline-block;
 }
 .nav li a {
     text-decoration: none;
     color: black;
-    font-weight: lighter;
+}
+.nav .item .inline {
+    display: flex;
+    align-items: center;
 }
 .nav .item .bendera {
     width: 26px;
-    height: 26px;
+    height: 28px;
+    margin-right: 5px;
 }
-.nav .item .bottom {
-    margin-left: 10px;
+.nav .item .bottom{
+    padding-top: 5px;
     width: 26px;
-    height: 26px;
+    height: 30px;
 }
 .nav .item .start{
-    padding: 6px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
     background-color: black;
     border-radius: 5px;
-
-}
-.nav .item .box {
-    width: 25   .5%;
 }
 .nav .item .start a {
     color: white;
 }
-
+.nav .item .box {
+    width: 20%;
+}
 .nav .item .login {
-    padding: 5px 10px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
     border-radius: 5px;
     text-decoration: underline;
     border: 1px solid black;
@@ -111,41 +137,71 @@
     span{
         display: none;
     }
-    .nav .item li {
-        margin-left: 18px;
-        font-size: 18px;
-    }
-    .nav .item .box {
-        width: 43%;
+    .nav .item .start{
+        width: 60px;
     }
 }
 
 @media (max-width: 992px) {
-    .nav .item .box {
-        width: 25%;
-    }
     .nav .item li {
-        margin-left: 14px;
-        font-size: 16px;
+        font-size: 18px;
     }
 }
-
 @media (max-width: 768px) {
+    .nav {
+        height: 70px;
+    }
     .nav .item .box {
-        width: 15%;
+        display: none;
     }   
     .nav .item li {
-        margin-left: 10px;
-        font-size: 15px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    .nav .item .bendera {
+        width: 22px;
+        height: 24px;
+        margin-right: 5px;
+    }
+    .nav .item .bottom {
+        margin-right: 10px;
+        width: 20px;
+        height: 23px;
     }
 }
-@media (max-width: 600px) {
-    .nav .item .box {
-        width: 0;
-    }   
+@media (max-width: 480px) {
     .nav .item li {
-        margin-left: 10px;
-        font-size: 13px;
+        margin-right: 5px;
+        font-size: 12px;
+    }
+    .nav .item {
+        justify-content:left;
+    }
+    .nav .item .login {
+        height: 30px;
+        width: 50px;
+    }
+    .nav .item .bendera {
+        width: 18px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    .nav .item .bottom {
+        margin-right: 5px;
+        width: 16px;
+        height: 20px;
+    }
+    .nav .item .start {
+        display: none;
+    }
+    .nav .item .bendera {
+        width: 18px;
+        height: 20px;
+    }
+    .nav .item .bottom {
+        margin-right: 5px;
+        width: 16px;
+        height: 19px;
     }
 }
 
@@ -157,20 +213,20 @@
     left: 0;
     transition: width 0.3s ease;
     z-index: 9997;
+    background-color: rgba(238, 239, 240, 1);
 }
 /*bagian-1*/
 .main .bagian-1 {
     background-color: rgb(33, 42, 49);
     color: white;
+    width: 100%;
     padding: 20px 0;
     font-family:'inter', sans-serif;
     box-shadow: 0px 8px 8px 0px #888888;
-
-
 }
 .main .bagian-1 .kata {
     text-align: center;
-    font-size: 46px;
+    font-size: 36px;
     font-weight: bold;
 }
 .main .bagian-1 .input {
@@ -178,11 +234,12 @@
     justify-content: center;
     width: 100%;
     margin: 5px 0;
-    font-size: 24px;
 }
 .main .bagian-1 .input .enter {
+    display: flex;
     height: 80px;
-    line-height: 80px;
+    align-items: center;
+    font-size: 24px;
     width: 40.97%;
     background-color: white;
     color: rgb(64, 64, 64);
@@ -190,44 +247,145 @@
     text-indent: 10px;
 }
 .main .bagian-1 .input .klik {
-    height: 80px;
-    line-height: 80px;
+    height: 86px;
     margin-left: 30px;
     color: white;
     border-radius: 3px;
     font-weight: bold;
     background-color: rgb(156, 159, 18);
-    width: 18.75%;
+    width: 18.8%;
     text-align: center;
+}
+.main .bagian-1 .input .klik a {
+    text-decoration: none;
+    color: white;
+    font-size:  24px;
 }
 .main .bagian-1 .pemanis{
     color:white;
     font-size: 24px;
-    margin-left:19%;
+    margin-left:18.5%;
 }
 
+@media (max-width: 1200px) {
+    /*bagian-1*/
+    .main .bagian-1 .kata{
+        font-size: 32px;
+    }
+    .main .bagian-1 .input {
+        font-size: 21px;
+    }
+    .main .bagian-1 .input .enter {
+        height: 70px;
+        line-height: 70px;
+    }
+    .main .bagian-1 .input .klik {
+        height: 76px;
+        line-height: 76px;
+    }
+    .main .bagian-1 .pemanis {
+        font-size: 21px;
+    }
+}
+@media (max-width: 992px){
+    /*bagian-1*/
+    .main .bagian-1 .kata{
+        font-size: 30px;
+    }
+    .main .bagian-1 .input {
+        font-size: 18px;
+    }
+    .main .bagian-1 .input .enter, .klik {
+        height: 70px;
+        line-height: 70px;
+    }
+    .main .bagian-1 .input .klik {
+        height: 76px;
+        line-height: 76px;
+    }
+}
+@media (max-width: 768px) {
+    .main {
+        top: 25px;
+    }
+    /*bagian-1*/
+    .main .bagian-1 .kata{
+        font-size: 24px;
+    }
+    .main .bagian-1 .input {
+        width: 100%;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main .bagian-1 .input .enter {
+        width: 40%;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .main .bagian-1 .input .klik{
+        width: 41.3%;
+        margin-left: 0;
+    }
+    .main .bagian-1 .pemanis{
+        font-size: 15px;
+        margin-left: 25%;
+    }
+}
+@media(max-width:480px){
+    .main .bagian-1 .kata{
+        font-size: 22px;
+    }
+    .main .bagian-1 .input .enter {
+        width: 60%;
+    }
+    .main .bagian-1 .input .klik {
+        width: 61.3%;
+    }
+    .main .bagian-1 .pemanis{
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        margin-left:0;
+    }
+}
 /*bagian-2*/
 .main .bagian-2 {
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 50px 40px;
+    height: 40vw;
+    width: 90%;
+    background-color: white;
+    padding: 0 5%;
 }
 .main .bagian-2 img {
-    height: 17.8vw;
-    width: 31.25%;
+    height: 20.8vw;
+    width: 33.25%;
     border: 1px solid rgb(179, 179, 179);
 }
-
+@media (max-width: 480px) {
+    .main .bagian-2 {
+        height: 200px;
+    }
+    .main .bagian-2 .hapus{
+        display: none;
+    }
+    .main .bagian-2 img {
+        height: 25.8vw;
+        width: 50.25%;
+        border: 1px solid rgb(179, 179, 179);
+    }
+}
 /*section-3*/
 .main .bagian-3{
     width: 100%;
-    padding-top: 80px;
     display: flex;
 }
 .main .bagian-3 .article-1{
     padding: 20px 0;
     width: 58.68%;
-    height: 500px;
     background-color:rgb(33, 42, 49);
     color: white;
     font-weight: 100;
@@ -250,6 +408,7 @@
 .main .bagian-3 .article-2 {
     width: 41.32%;
     height: 540px;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -258,14 +417,54 @@
     width: 100%;
     height: 26vw;
 }
-
+@media (max-width: 1200px) {
+    /*bagian-3*/  
+    .main .bagian-3 {
+        display: block;
+    }
+    .main .bagian-3 .article-1{
+        width: 100%;
+    }
+    .main .bagian-3 .article-2 {
+        width: 100%;
+        height: 45vw;
+    }
+    .main .bagian-3 .article-2 img{
+        float: none;
+        width: 75%;
+        height: 42vw;
+    }
+}
+@media (max-width: 992px) {
+    /*bagian-3*/
+    .main .bagian-3 .article-1 h1{
+        font-size: 30px;
+    }
+    .main .bagian-3 .article-1 h2 {
+        font-size: 22px;
+    }
+    .main .bagian-3 .article-1 p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 768px) {
+    /*bagian-3*/
+    .main .bagian-3 .article-1 h1{
+        font-size: 28px;
+    }
+    .main .bagian-3 .article-1 h2 {
+        font-size: 16px;
+    }
+    .main .bagian-3 .article-1 p{
+        font-size: 14px;
+    }
+}
 /*section-4*/
 .main .bagian-4{
     width: 100%;
     display: flex;
     padding-top: 80px;
     flex-direction: row;
-    background-color: rgba(238, 239, 240, 1);
 }
 .main .bagian-4 .article-1 {
     flex: 1;
@@ -300,12 +499,65 @@
     font-weight: 100;
     margin: 20px 3%;
 }
+@media (max-width: 1200px) {
+    /*bagian-4*/  
+    .main .bagian-4 {
+        flex-direction: column;
+    }
+    .main .bagian-4 .article-2 {
+        width: 100%;
+    }
+    .main .bagian-4 .article-1 {
+        width: 100%;
+        height: 45vw;
+    }
+    .main .bagian-4 .article-1 img{
+        float: none;
+        width: 75%;
+        height: 42vw;
+    }
+    .main .bagian-4 .article-1 {
+        width: 100%;
+        order: initial;
+    } 
+    .main .bagian-4 .article-2 {
+        width: 100%;
+        order: initial;
+    }
+}
+@media (max-width: 992px) {
+    /*bagian-4*/
+    .main .bagian-4 .article-2 h1{
+        font-size: 30px;
+    }
+    .main .bagian-4 .article-2 h2 {
+        font-size: 22px;
+    }
+    .main .bagian-4 .article-2 p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 768px) {
+    /*section-4*/  
+    .main .bagian-4 .article-1 h1 {
+        font-size: 28px;
+    }
+
+    .main .bagian-4 .article-2 h1 {
+        font-size: 28px;
+    }
+    .main .bagian-4 .article-2 h2 {
+        font-size: 16px;
+    }
+    .main .bagian-4 .article-2 p {
+        font-size: 14px;
+    }
+}
 /*section-5*/
 .main .bagian-5{
     width: 100%;
     display: flex;
-    background-color: rgba(238, 239, 240, 1);
-
+    margin-top: 40px;
 }
 .main .bagian-5 .article-1{
     margin-top: 30px;
@@ -336,11 +588,52 @@
     width: 100%;
     height: 26svw;
 }
-
+@media (max-width: 1200px) {
+    /*bagian-5*/  
+    .main .bagian-5 {
+        flex-direction: column;
+    }
+    .main .bagian-5 .article-1{
+        width: 100%;
+    }
+    .main .bagian-5 .article-2 {
+        margin: 40px 0;
+        width: 100%;
+        height: 45vw;
+    }
+    .main .bagian-5 .article-2 img{
+        float: none;
+        width: 75%;
+        height: 42vw;
+    }
+}
+@media (max-width: 992px) {
+    /*bagian-5*/
+    .main .bagian-5 .article-1 h1{
+        font-size: 30px;
+    }
+    .main .bagian-5 .article-1 h2 {
+        font-size: 22px;
+    }
+    .main .bagian-5 .article-1 p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 768px) {
+    /*bagian-5*/
+    .main .bagian-5 .article-1 h1{
+        font-size: 28px;
+    }
+    .main .bagian-5 .article-1 h2 {
+        font-size: 16px;
+    }
+    .main .bagian-5 .article-1 p{
+        font-size: 14px;
+    }  
+}
 /*bagian-6*/
 .main .bagian-6 {
     background-color:rgb(33, 42, 49);
-    height: 600px;
     width: 100%;
     padding: 30px 0;
     color: white;
@@ -351,11 +644,15 @@
     font-size: 36px;
     margin-left: 5%;
 }
+.main .bagian-6 .item {
+    position: relative;
+}
 .main .bagian-6 .item li{
     font-size: 22px;
     border-bottom: 2px solid white;
     width: 90%;
-    padding: 30px 0;
+    height: 90px;
+    line-height: 90px;
     margin-left: 5%;
 }
 .main .bagian-6 .kata{
@@ -376,155 +673,16 @@
 }
 
 @media (max-width: 1200px) {
-    /*bagian-1*/
-    .main .bagian-1 .kata{
-        font-size: 36px;
-    }
-    .main .bagian-1 .input {
-        font-size: 21px;
-    }
-    .main .bagian-1 .input .enter {
-        height: 75px;
-        line-height: 75px;
-    }
-    .main .bagian-1 .input .klik {
-        height: 75px;
-        line-height: 75px;
-    }
-    .main .bagian-1 .pemanis {
-        font-size: 21px;
-    }
-    /*bagian-3*/  
-    .main .bagian-3 {
-        display: block;
-    }
-    .main .bagian-3 .article-1{
-        width: 100%;
-    }
-    .main .bagian-3 .article-2 {
-        width: 100%;
-        height: 39vw;
-    }
-    .main .bagian-3 .article-2 img{
-        float: none;
-        width: 70%;
-        height: 33vw;
-    }
-    /*bagian-4*/  
-    .main .bagian-4 {
-        flex-direction: column;
-    }
-    .main .bagian-4 .article-2 {
-        width: 100%;
-    }
-    .main .bagian-4 .article-1 {
-        width: 100%;
-        height: 39vw;
-    }
-    .main .bagian-4 .article-1 img{
-        float: none;
-        width: 70%;
-        height: 33vw;
-    }
-    .main .bagian-4 .article-1 {
-        width: 100%;
-        order: initial;
-    } 
-    .main .bagian-4 .article-2 {
-        width: 100%;
-        order: initial;
-    }
- 
-    /*bagian-5*/  
-    .main .bagian-5 {
-        flex-direction: column;
-    }
-    .main .bagian-5 .article-1{
-        width: 100%;
-    }
-    .main .bagian-5 .article-2 {
-        margin: 40px 0;
-        width: 100%;
-    }
-    .main .bagian-5 .article-2 img{
-        float: none;
-        width: 70%;
-        height: 33vw;
-    }
     /*bagian-6*/
-    .main .bagian-6 h1{
-        font-size: 32px;
-    }
-    .main .bagian-6 .item li{
-        font-size: 20px;
-    }
-    .main .bagian-6 .kata{
-        margin-left: 5%;
-        font-size: 20px;
-    }
-    .main .bagian-6 .mulai {
-        font-size: 20px;
-    }
     .main .bagian-6 .mulai p {
         height: 65px;
         line-height: 65px;
-
     }
 }
-
 @media (max-width: 992px) {
-    /*bagian-1*/
-    .main .bagian-1 .kata{
-        font-size: 32px;
-    }
-    .main .bagian-1 .input {
-        font-size: 18px;
-    }
-    .main .bagian-1 .input .enter, .klik {
-        height: 70px;
-        line-height: 70px;
-    }
-    .main .bagian-1 .input .klik {
-        height: 70px;
-        line-height: 70px;
-    }
-    .main .bagian-1 .pemanis{
-        font-size: 18px;
-    }
-    /*bagian-3*/
-    .main .bagian-3 .article-1 h1{
-        font-size: 30px;
-    }
-    .main .bagian-3 .article-1 h2 {
-        font-size: 22px;
-    }
-    .main .bagian-3 .article-1 p{
-        font-size: 15px;
-    }
-    /*bagian-4*/
-    .main .bagian-4 .article-2 h1{
-        font-size: 30px;
-    }
-    .main .bagian-4 .article-2 h2 {
-        font-size: 22px;
-    }
-    .main .bagian-4 .article-2 p{
-        font-size: 15px;
-    }
-    /*bagian-5*/
-    .main .bagian-5 .article-1 h1{
-        font-size: 30px;
-    }
-    .main .bagian-5 .article-1 h2 {
-        font-size: 22px;
-    }
-    .main .bagian-5 .article-1 p{
-        font-size: 15px;
-    }
-    /*bagian-6*/
-        
+    /*bagian-6*/   
     .main .bagian-6 h1{
-        font-size: 32px;
+        font-size: 28px;
     }
     .main .bagian-6 .item li{
         font-size: 20px;
@@ -543,77 +701,18 @@
 }
 
 @media (max-width: 768px) {
-    /*bagian-1*/
-    .main .bagian-1 .kata{
-        font-size: 28px;
-    }
-    .main .bagian-1 .input {
-        width: 100%;
-        font-size: 15px;
-        display: block;
-    }
-    .main .bagian-1 .input .enter {
-        height: 65px;
-        line-height: 65px;
-        width: 60%;
-        margin-left: 20%;
-    }
-    .main .bagian-1 .input .klik {
-        height: 65px;
-        line-height: 65px;
-        width: 60%;
-        margin-left: 20%;
-    }
-    .main .bagian-1 .pemanis{
-        font-size: 15px;
-        margin-left: 25%;
-    }
-
-    /*bagian-3*/
-    .main .bagian-3 .article-1 h1{
-        font-size: 28px;
-    }
-    .main .bagian-3 .article-1 h2 {
-        font-size: 16px;
-    }
-    .main .bagian-3 .article-1 p{
-        font-size: 14px;
-    }
-    /*section-4*/  
-    .main .bagian-4 .article-1 h1 {
-        font-size: 28px;
-    }
-
-    .main .bagian-4 .article-2 h1 {
-        font-size: 28px;
-    }
-    .main .bagian-4 .article-2 h2 {
-        font-size: 16px;
-    }
-    .main .bagian-4 .article-2 p {
-        font-size: 14px;
-    }
-    /*bagian-5*/
-    .main .bagian-5 .article-1 h1{
-        font-size: 28px;
-    }
-    .main .bagian-5 .article-1 h2 {
-        font-size: 16px;
-    }
-    .main .bagian-5 .article-1 p{
-        font-size: 14px;
-    }    
         /*bagian-6*/
-        
         .main .bagian-6 h1{
-            font-size: 32px;
+            font-size: 24px;
         }
         .main .bagian-6 .item li{
-            font-size: 20px;
+            font-size: 18px;
+            height: 70px;
+            line-height: 70px;
         }
         .main .bagian-6 .kata{
             margin-left: 5%;
-            font-size: 20px;
+            font-size: 18px;
         }
         .main .bagian-6 .mulai {
             font-size: 20px;
@@ -623,13 +722,30 @@
             line-height: 65px;
         }
 }
-
+@media (max-width: 480px) {
+    /*bagian-6*/
+    .main .bagian-6 h1{
+        font-size: 20px;
+    }
+    .main .bagian-6 .item li{
+        font-size: 16px;
+        height: 65px;
+        line-height: 65px;
+    }
+    .main .bagian-6 .kata{
+        margin-left: 5%;
+        font-size: 16px;
+    }
+    .main .bagian-6 .mulai {
+        font-size: 18px;
+    }
+}
 /*footer*/
 .footer {
     position: relative;
     top: 10px;
     width: 100%;
-    height: 100px;
+    height: 80px;
     line-height: 100px;
     font-family:'Roboto', sans-serif;
     background-color:rgb(33, 42, 49);
@@ -654,21 +770,11 @@
     .footer {
         top: 20px;
         font-size: 18px;
-        
     }
 }
-@media(max-width:440px){
-    .nav .item .start{
-        display: none;
-    
+@media (max-width: 480px) {
+    .footer {
+        top: 20px;
+        font-size: 16px;  
     }
-    .nav .item .login{
-        margin-right: 50px;
-    }
-    .nav .item .login a{
-        float: none;
-        margin-right: 30px;
-        text-align: center;
-    }
-
 }
