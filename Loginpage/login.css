@@ -1,15 +1,20 @@
 .container{
-    width: 1366px;
-    height: 768px;
-    background-color: black;
+    width: 1440px;
     font-family: 'inter', sans-serif;
 }
-
+@media (max-width: 1440px) {
+    .container {
+        width: 100%;
+    }
+}
 .nav{
     width: 100%;
-    height: 100px;
+    height: 100px; 
+    top: 0;
+    left: 0;
     position: fixed;
     background-color: white;
+    z-index: 9999;
     transition: width 0.3s ease;
     display: flex;
     justify-content: center;
@@ -18,23 +23,23 @@
     list-style-type: none;
     width: 100%;
     display: flex;
-    margin-left: -300px;
-    justify-content: center;
     align-items: center;
 }
 .nav .item li {
     margin-left: 20px;
     font-size: 22px;
     font-weight: bold;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nav li a {
     text-decoration: none;
     color: black;
 }
 .nav .item .bendera {
-    width: 60px;
-    height: 50px;
+    width: 26px;
+    height: 26px;
 }
 .nav .item .bottom {
     margin-left: 10px;
@@ -42,388 +47,380 @@
     height: 26px;
 }
 
-.nav .item .box {
-    width: 24.5%;
+@media (max-width: 1200px) {
+    .nav .item li {
+        margin-left: 18px;
+        font-size: 18px;
+    }
+    .nav .item .box {
+        width: 43%;
+    }
 }
 
-.kiri{
-    width: 50%;
-    height: 100%;
-    float: left;
-    background-color: #212a31;
+@media (max-width: 992px) {
+    .nav .item li {
+        margin-left: 14px;
+        font-size: 16px;
+    }
 }
 
-.kiri .kosong{
-    margin-top: 190px;
+@media (max-width: 768px) {
+    .nav {
+        height: 60px;
+    }
+    .nav .item li {
+        font-size: 15px;
+    }
+    .nav .item {
+        padding: 0;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .nav .item .bottom {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .nav {
+        width: 100%;
+    }
+    .nav .hapus {
+        display: none;
+    }
+    .nav .item li {
+        font-size: 13px;
+        margin-left: 6px;
+    }
+    .nav .item .bottom {
+        margin-left: 5px;
+        width: 18px;
+        height: 18px;
+    }
+}
+.main {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 100px;
+    display: flex;
+    z-index: 9998;
+}
+.main .kiri{
+    height: 678px;
+    width: 40%;
+    padding: 0 5%;
+    background-color: #212A31;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.main .kiri article {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.main .kiri .logo {
+    width: 100%;
 }
 .kiri .logo img{
-    width: 150px;
-    height: 100px;
-    font-size: 32px;
-    color: white;
-    float: left;
-    padding-left: 55px;
+    width: 28%;
+    height: 8vw;
+    margin-right: 30px;
 }
-
-.kiri .logo p{
-    padding: 40px 0;
-}
-
-.kiri p{
+.kiri span{
+    font-weight: bold;
     color: white;
     font-size: 32px;
 }
-
+.kiri .size span {
+    color: black;
+}
+.kiri .logo .merek {
+    color: #E0D0FB;
+}
 .kiri .signin{
-    padding-left: 55px;
-    padding-bottom: 50px;
-    padding-top: 30px;
+    width: 100%;
+    margin: 10px 0;
 }
-
 .kiri .google{
+    display: flex;
+    align-items: center;
     border-radius: 15px;
-    background-color: red;
+    border: 1 solid black;
+    background-color: white;
     height: 75px;
-    width: 575px;
-    margin-left: 50px;
+    width: 100%;
 }
-
-.kiri .google img,
-.kiri .facebook img{
-    float: left;
-    padding-left: 15px;
-    padding-top: 10px;
+.kiri .size div img{
+    width: 12%;
+    height: 4.3vw;
 }
-
-.kiri .google p,
-.kiri .facebook p{
-    font-size: 38px;
-    padding-top: 15px;
-    padding-left: 95px;
-}
-
 .kiri .facebook{
+    display: flex;
+    align-items: center;
     border-radius: 15px;
-    background-color: blue;
+    border: 1 solid black;
+    background-color: white;
     height: 75px;
-    width: 575px;
-    margin-left: 50px;
-    margin-top: 30px;
+    width: 100%;
 }
-
+article .posisi {
+    margin: 0 20px;
+}
+.kiri .google:hover {
+    background-color: antiquewhite;
+}
+.kiri .facebook:hover {
+    background-color: antiquewhite;
+}
+@media (max-width: 1200px) {
+    .kiri span{
+        font-size: 26px;
+    }
+    .kiri .merek {
+        font-size: 28px;
+    }
+}
+@media (max-width: 992px) {
+    .kiri span{
+        font-size: 22px;
+    }
+    .kiri .merek {
+        font-size: 24px;
+    }
+}
+@media (max-width: 768px) {
+    .main .kiri {
+        display: none;
+    }
+}
 .kanan{
     width: 50%;
-    height: 100%;
-    float: right;
-    background-color: #748d92;
+    background-color: #748D92;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 .kanan .latarbelakang{
-    background-color: #d3d9d4;
-    width: 500px;
-    height: 500px;
-    margin: 160px auto;
+    background-color: white;
+    width: 70%;
+    height: 550px;
     border-radius: 15px;
 }
-
 .kanan .close{
     width: 35px;
     height: 35px;
     float: right;
     margin-top: 10px;
     margin-right: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .kanan .close img{
     width: 20px;
-    padding-top: 7px;
-    padding-left: 7px;
+    height: 20px;
 }
-
+.kanan .login {
+    padding-top: 40px;
+    margin: 40px 0;
+}
 .kanan .textlogin{
-    text-align: center;
-    padding: 60px 0px;
+    display: flex;
+    justify-content: center;
     font-size: 36px;
+    width: 100%;
 }
-
 .kanan .bagianinput{
     text-align: center;
 }
 
 .kanan .bagianinput input{
     font-size: 20px;
-    width: 370px;
+    margin: 15px 0;
+    width: 80%;
     height: 40px;
     color: black;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     border-bottom: 1px solid black;
 }
-
 .kanan .remember{
-    padding-left: 60px;
-    padding-top: 5px;
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: center;
 }
-
+.kanan .remember span {
+    width: 50%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
 .kanan .remember a{
-    padding-left: 80px;
     text-decoration: none;
     color: blue;
 }
-
 .kanan .kirimlogin{
-    padding: 30px 0px 15px;
     text-align: center;
+    margin-bottom: 30px;
 }
-
 .kanan .kirimlogin button{
-    width: 370px;
+    width: 80%;
     height: 40px;
-    color: white;
     font-size: 20px;
-    background-color: #212a31;
+    background-color: black;
     border-radius: 10px;
+    border: none;
 }
-
+.kanan .kirimlogin button a {
+    text-decoration: none;
+    color: white;
+}
 .kanan .signup {
     text-align: center;
 }
-
 .kanan .signup a{
     text-decoration: none;
     color: blue;
 }
 
-.kanan .signin{
-    display: none;
+.kanan span {
+    font-size: 20px;
 }
-
+.kanan .akun {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .kanan .google{
-    border-radius: 15px;
-    background-color: red;
-    height: 75px;
-    width: 575px;
-    margin-left: 50px;
     display: none;
+    align-items: center;
+    border-radius: 15px;
+    border: 1 solid black;
+    background-color: white;
 }
-
-.kanan .google img,
-.kanan .facebook img{
-    float: left;
-    padding-left: 15px;
-    padding-top: 10px;
-}
-
-.kanan .google p,
-.kanan .facebook p{
-    font-size: 38px;
-    padding-top: 15px;
-    padding-left: 95px;
-}
-
 .kanan .facebook{
-    border-radius: 15px;
-    background-color: blue;
-    height: 75px;
-    width: 575px;
-    margin-left: 50px;
-    margin-top: 30px;
     display: none;
+    align-items: center;
+    border-radius: 15px;
+    border: 1 solid black;
+    background-color: white;
 }
-
+.kanan .akun div img{
+    width: 10%;
+    height: 6vw;
+}
 @media (max-width: 1200px) {
-    .container{
-        width: 100%;
+    .kanan .remember{
+        font-size: 12px;
     }
-
-    .nav .item{
-        padding-left: 150px;
+    .kanan .latarbelakang{
+        width: 80%;
     }
-
-    .kiri .google,
-    .kiri .facebook{
-        width: 500px;
-    }
-
-    .kiri .google p,
-    .kiri .facebook p{
-        font-size: 32px;
-        padding-top: 20px;
+    .kanan .remember span {
+        font-size: 12px;
     }
 }
 
 @media (max-width: 992px) {
-    .container{
-        width: 100%;
-    }
-
-    .nav .item{
-        padding-left: 250px;
-    }
-
-    .kiri .logo img{
-        width: 100px;
-        height: 75px;
-    }
-    .kiri .logo p{
-        font-size: 28px;
-        padding-top: 25px;
-    }
-
-    .kiri .signin{
-        font-size: 24px;
-    }
-
-    .kiri .google,
-    .kiri .facebook{
-        width: 400px;
-    }
-
-    .kiri .google p,
-    .kiri .facebook p{
-        font-size: 24px;
-        padding-top: 25px;
-    }
     .kanan .latarbelakang{
-        width: 450px;
-    }
-
-    .kanan .remember{
-        padding-left: 25px;
+        width: 90%;
     }
 }
 
 @media (max-width: 768px) {
-    .container{
-        width: 100%;
+    .main {
+        top: 60px;
     }
-
-    .nav .item{
-        padding-left: 350px;
-    }
-
-    .nav .item li{
-        font-size: 16px;
-    }
-
-
-    .kiri{
+    .kanan .google span,
+    .kanan .facebook span{
         display: none;
     }
-
     .kanan{
-        width: 100%;
+        width: 75%;
+        height: 635px;
         background-color: #212a31;
+        display: flex;
+        padding: 35px 15%;
     }
     .kanan .latarbelakang{
-        width: 500px;
-        height: 575px;
+        height: 100%;
+        width: 100%;
     }
-
-    .kanan .remember{
-        padding-left: 60px;
-    }
-
-    .kanan .signup{
-        padding-bottom: 15px;
-    }
-
-    .kanan .signin{
-        display: inline;
-        padding-left: 165px;
-    }
-
-    .kanan .google,
-    .kanan .facebook{
-        margin: 10px 0px;
-        display: block;
-        margin-left: 60px;
-        width: 375px;
+    .kanan .google{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        background-color: white;
         height: 50px;
+        width: 28%;
+        margin-right: 20px;
+        border: 1px solid #212A31;
     }
-
-    .kanan .google img,
-    .kanan .facebook img{
-        display: block;
-        width: 40px;
-        height: 30px;
+    .kanan .facebook{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        background-color: white;
+        border:  1px solid #212A31;
+        height: 50px;
+        width: 28%;
     }
-
-    .kanan .google p,
-    .kanan .facebook p{
-        display: block;
-        font-size: 22px;
-        color: white;
+    .kanan .login {
+        padding-top: 20px;
+        margin: 20px 0;
     }
-
-    
+    .kanan .remember{
+        font-size: 14px;
+    }
+    .kanan .remember span {
+        font-size: 14px;
+    }
+    .kanan .akun div img{
+        width: 30%;
+        height: 5.7vw;
+    }
+    .kanan .google:hover {
+        background-color: antiquewhite;
+    }
+    .kanan .facebook:hover {
+        background-color: antiquewhite;
+    }
 }
 
 @media (max-width: 480px) {
-    .container{
-        width: 100%;
-    }
-
-    .nav .item{
-        padding-left: 350px;
-    }
-
-    .nav .item li{
-        font-size: 16px;
-    }
-
-
-    .kiri{
-        display: none;
-    }
-
     .kanan{
-        width: 100%;
-        background-color: #212a31;
+        width: 90%;
+        padding: 20px 5%;
     }
-    .kanan .latarbelakang{
-        width: 400px;
-        height: 575px;
-    }
-
     .kanan .remember{
-        padding-left: 10px;
+        font-size: 12px;
     }
-
-    .kanan .signup{
-        padding-bottom: 15px;
+    .kanan .remember span {
+        font-size: 12px;
     }
-
-    .kanan .signin{
-        display: inline;
-        padding-left: 115px;
+    .kanan .akun div img{
+        height: 6vw;
     }
-
-    .kanan .google,
-    .kanan .facebook{
-        margin: 10px 0px;
-        display: block;
-        margin-left: 10px;
-        width: 375px;
-        height: 50px;
+    .kanan .google{
+        margin-right: 20px;
+        height: 40px;
+        width: 20%;
     }
-
-    .kanan .google img,
-    .kanan .facebook img{
-        display: block;
-        width: 40px;
-        height: 30px;
+    .akun .facebook {
+        height: 40px;
+        width: 20%;
     }
-
-    .kanan .google p,
-    .kanan .facebook p{
-        display: block;
-        font-size: 22px;
-        color: white;
-    }
-
-    
 }

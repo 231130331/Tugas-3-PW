@@ -5,73 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="reset.css">
 </head>
-<body>
-    <div class="container">
+<body class="container">
     <nav class="nav">
         <ul class="item">
-            <img class="bendera" src="../Bahan CSS/Homepage/bendera.png" alt="bendera">
-           <li>Bahasa <span>Indonesia</span></a></li>
-            <li></li>
+            <img class="bendera" src="../Bahan CSS/login/bendera.png" alt="bendera">
+            <li><span class="hapus">Bahasa </span>Indonesia</a></li>
             <li><a href="harga">Harga</a></li>
             <li ><a href="fitur">Fitur</a></li>
-            <img class="bottom" src="../Bahan CSS/Homepage/down.png" alt="down">
-            <li><a href="help">Help <span>Center</span></a></li>
-            <li class="box"></li>
+            <img class="bottom" src="../Bahan CSS/subcriptionpage/down.png" alt="down">
+            <li><a href="help">Help <span class="hapus">Center</span></a></li>
         </ul>
     </nav>
-    <section class="kiri">
-        <div class="kosong">
-            <div class="logo">
-                <img src="../Bahan CSS/Userhomepage/logo.png"> 
-                <p>E-UMKM</p>
-            </div>
-        </div>
-        <p class="signin">Sign in your account with</p>
-        <div class="google">
-            <img src="../Bahan CSS/Icons/google.png"> 
-            <p>Continue With Google</p>
-        </div>
-        <div class="facebook">
-            <img src="../Bahan CSS/Icons/facebook.png">
-            <p>Continue With Facebook</p>
-        </div>
-    </section>
-    <section class="kanan">
-        <div class="latarbelakang">
-            <div class="close">
-                <img src="../Bahan CSS/Icons/icon close.png">
-            </div>
-            <p class="textlogin"><b>Login</b></p>
-            <div class="bagianinput">
-                <input type="text" placeholder="Email">
-                <br><br><br>
-                <input type="password" placeholder="Password">
-            </div>
-            <div class="remember">
-                <input type="checkbox">Remember Me
-                <a href="#">Forget Your Password?</a>
-            </div>
-            <div class="kirimlogin">
-                <form>
-                    <button type="submit">Login</button>
-                </form>
-            </div>
-            <div class="signup">
-                <p>Don`t have an account? <a href="#">Sign up</a></p>
-            </div>
-            <p class="signin">Sign in your account with</p>
-            <div class="google">
-                <img src="../Bahan CSS/Icons/google.png"> 
-                <p>Continue With Google</p>
-            </div>
-            <div class="facebook">
-                <img src="../Bahan CSS/Icons/facebook.png">
-                <p>Continue With Facebook</p>
-            </div>
-        </div>
-    </section>
-    </div>
+    <main class="main">
+        <section class="kiri">
+            <article class="logo">
+                <img src="../Bahan CSS/login/logo.png"> 
+                <span class="merek">E-UMKM</span>
+            </article>
+            <article>
+                <span class="signin">Sign in your account with</span>
+            </article>
+            <article class="size">
+                <div class="google">
+                    <img class="posisi" src="../Bahan CSS/login/google.png"> 
+                    <span class="kata">Continue With Google</span>
+                </div>
+            </article>
+            <article class="size" >
+                <div class="facebook">
+                    <img class="posisi" src="../Bahan CSS/login/facebook.png">
+                    <span class="kata">Continue With Facebook</span>
+                </div>
+            </article>
+        </section>
+        <section class="kanan">
+            <article class="latarbelakang">
+                <div class="close">
+                    <img src="../Bahan CSS/Icons/icon close.png">
+                </div>
+                <div class="login">
+                    <p class="textlogin"><b>Login</b></p>
+                </div>
+                <div class="bagianinput">
+                    <input type="text" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="remember">
+                    <span><input type="checkbox">Remember Me</span>
+                    <a href="#">Forget Your Password?</a>
+                </div>
+                <div class="kirimlogin">
+                    <form>
+                        <button type="submit"><a href="userhomepage">Login</a></button>
+                    </form>
+                </div>
+                <div class="signup">
+                    <p>Don`t have an account? <a href="#">Sign up</a></p>
+                </div>
+                <div class="akun">
+                    <div class="akun">
+                    <div class="google">
+                        <img class="posisi" src="../Bahan CSS/login/google.png"> 
+                    </div>
+                    <div class="facebook">
+                        <img class="posisi" src="../Bahan CSS/login/facebook.png">
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
