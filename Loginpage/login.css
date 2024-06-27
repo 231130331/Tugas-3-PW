@@ -281,9 +281,6 @@ article .posisi {
     background-color: black;
     border-radius: 10px;
     border: none;
-}
-.kanan .kirimlogin button a {
-    text-decoration: none;
     color: white;
 }
 .kanan .signup {
@@ -378,6 +375,9 @@ article .posisi {
         height: 50px;
         width: 28%;
     }
+    .kanan .bagianinput input{
+        font-size: 18px;
+    }
     .kanan .login {
         padding-top: 20px;
         margin: 20px 0;
@@ -413,6 +413,9 @@ article .posisi {
     }
     .kanan .akun div img{
         height: 6vw;
+    }
+    .kanan .bagianinput input{
+        font-size: 14px;
     }
     .kanan .google{
         margin-right: 20px;

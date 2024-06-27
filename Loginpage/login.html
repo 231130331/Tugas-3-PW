@@ -48,18 +48,44 @@
                     <p class="textlogin"><b>Login</b></p>
                 </div>
                 <div class="bagianinput">
-                    <input type="text" placeholder="Email">
-                    <input type="password" placeholder="Password">
+                    <input id="email" type="email" placeholder="Email">
+                    <input id="password" type="password" placeholder="Password">
                 </div>
                 <div class="remember">
                     <span><input type="checkbox">Remember Me</span>
                     <a href="#">Forget Your Password?</a>
                 </div>
                 <div class="kirimlogin">
-                    <form>
-                        <button type="submit"><a href="userhomepage">Login</a></button>
-                    </form>
+                    <button id="button" type="submit">Login</button>
                 </div>
+                <script>
+                    document.getElementById("button").addEventListener("click", function(event){
+                        var email = document.getElementById("email").value; 
+                        var password = document.getElementById("password").value;
+                        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                        
+                        if (email == ""){
+                            alert("tolong masukkan email anda");
+                            return;
+                        }
+                        else if (!emailPattern.test(email)){
+                            alert("masukkan email dengan benar.");
+                            return;
+                        }
+                        else if (password == "") {
+                            alert ("tolong masukkan password anda");
+                            return;
+                        }
+                        else if (password.length < 6 || password.length > 16) {
+                            alert("password harus terdiri dari 6 sampai 16 karakter.");
+                            return;
+                        }
+                        else {
+                            console.log("login berhasil!");
+                            location.replace("Bahan CSS/Userhomepage/userhomepage.html");
+                        }
+                    });
+                </script>
                 <div class="signup">
                     <p>Don`t have an account? <a href="#">Sign up</a></p>
                 </div>
