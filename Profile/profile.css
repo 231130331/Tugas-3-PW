@@ -477,16 +477,16 @@
     background-color: rgb(246, 246, 246);
 }
 .main .bagian-2 .inline {
-    width: 100px;
+    width: 120px;
     height: 35px;
     border-radius: 10px;
     display: flex;
-    align-items: center;
     justify-content: center;
     background-color: rgb(196, 238, 226);
 }
-.main .bagian-2 article .verifikasi {
-    margin-top: 7px;
+.main .bagian-2 .inline span {
+    display: flex;
+    align-items: center;
 }
 .main .bagian-2 article .judul {
     font-size: 32px;
