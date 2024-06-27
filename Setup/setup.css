@@ -1,0 +1,461 @@
+.container {
+    width: 1440px;
+    font-family:'inter', sans-serif;
+    background-color: rgb(238, 239, 240);
+    margin: 0;
+}
+
+@media (max-width: 1440px){
+    .container{
+        width: 100%;
+    }
+}
+/*header*/
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(33, 42, 49);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .logo {
+    width: 60px;
+    height: 40px;
+    margin-right: 20px;
+}
+.header .merek {
+    color: rgb(224, 208,251);
+    font-size: 24px;
+    font-weight: bold;
+}
+.header .latar {
+    width: 52.66%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    margin: 4.75%;
+    position: relative;
+}
+.header .latar img {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    position: absolute;
+}
+.header .latar input {
+    background-color: rgb(116, 141, 146);
+    border: none;
+    width: 94%;
+    height: 100%;
+    padding-left: 50px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+}
+.header .latar input::placeholder {
+    color: white;
+    font-size: 16px;
+}
+
+.header .bell {
+    margin-top: 3px;
+    background-color: rgb(53, 68, 79);
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 20px;
+}
+.header .img :hover {
+    width: 45px;
+    height: 45px;
+    background-color: black;
+}
+.header .akun a {
+    background-color: rgb(53, 68, 79);
+    display: flex;
+    align-items: center;
+    height: 56px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-bottom: 1px;
+}
+.header .akun .kata {
+    margin-right: 10px;
+} 
+.header .akun :hover {
+    background-color: rgb(12, 12, 12);
+}
+
+.header .akun .profil {
+    margin: 0 12px;
+    background-color: chocolate;
+    padding: 5px 14px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+@media (max-width: 1200px){
+    .header .merek {
+        display: none;
+    }
+    .header .akun .kata{
+        display: none;
+    }
+    .header{
+        height: 70px;
+    }
+    header .latar span {
+        font-size: 13px;
+    }
+    .header .latar {
+        height: 35px;
+        border-radius: 15px;
+    }
+    .header .logo {
+        width: 40px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    .header .latar img {
+        width: 20px;
+        height: 20px;
+        margin: 0 10px;
+    }
+    .header .akun .profil {
+        margin: 5px;
+        padding: 3px 12px;
+    }
+    .header .akun a {
+        height: 42px;
+        border-radius: 13px;
+    }
+    .header .bell {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        border-radius: 13px;
+    }
+    .header .img :hover {
+        width: 30px;
+        height: 30px;
+    }
+}
+/*nav*/
+.nav {
+    position: fixed;
+    top: 90px;
+    width: 260px;
+    height: 100%;
+    left: 0;
+    background-color: rgb(233, 231, 233);
+    z-index: 9998;
+    transition: width 0.3s ease;
+    padding: 20px 20px;
+    font-weight: bold;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.nav .channel {
+    width: 100%;
+}
+.nav .fitur {
+    width:78%;
+    color: rgb(156, 156, 156);
+    font-size: 20px;
+    float: left;
+}
+.nav .jomblo{
+    width: 23px;
+    height: 23px;
+}
+.nav li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 15px 10px;
+}
+.nav li a {
+    font-size: 16px;
+    color: rgb(53, 68, 79);
+    text-decoration: none;
+}
+.nav li .gambar {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.nav .sales {
+    text-indent: 40px;
+}
+.nav .box{
+    height: 135px;
+}
+.nav .bantuan{
+    width: 100%;
+    height: 150px;
+    border-top: 2px solid rgb(164, 164, 164);
+}
+.nav .bantuan .help {
+    width: 100%;
+    font-weight:bold;
+}
+.nav .home{
+    background-color: white;
+    border-radius: 10px;
+}
+.nav .channel li:hover {
+    background-color: white;
+    border-radius: 10px;
+}
+@media (max-width: 1200px){
+    .nav {
+        top: 70px;
+        width: 220px;
+    }
+    .nav section .fitur {
+        font-size: 18px;
+    }
+    .nav section li a {
+        font-size: 16px;
+    }
+    .nav .box{
+        height: 145px;
+    }
+}
+@media (max-width: 768px) {
+    .nav {
+        width: 68px;
+    }
+    .nav section .fitur {
+        display: none;
+    }
+    .nav section .jomblo {
+        display: none;
+    }
+    .nav li {
+        display: flex;
+        justify-content: center;
+    }
+    .nav .channel .gambar{
+        margin-left: 18px;
+    }
+    .nav .box {
+        height: 200px;
+    }
+    .nav .sales{
+        text-indent: 0;
+    }
+    .nav section li a span {
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+    .nav {
+        width: 50px;
+    }
+}
+
+.main {
+    position: relative;
+    width: 75%;
+    left: 300px;
+    padding: 0 3%;
+    top: 90px;
+    font-weight: bold;
+}
+.main .judul {
+    font-size: 20px;
+}
+.main .bagian-1 {
+    width: 92%;
+    border-radius: 15px; 
+    background-color: white;
+    padding: 30px 4%;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #5B5A5D;
+}
+.main .bagian-1 .hitam {
+    color: black;
+}
+.main .bagian-1 article {
+    display: flex;
+    width: 100%;
+    margin:10px 0;
+}
+.main .bagian-1 article .input1 {
+    width: 60%;
+    margin-right: 5%;
+}
+.main .bagian-1 article .input2 {
+    width: 40%;
+    margin-right: 5%;
+}
+.main .bagian-1 article .input1 .sama,
+.main .bagian-1 article .input2 .sama {
+    width: 100%;
+    border-radius: 13px;
+    height: 35px;
+    border: 1px solid rgb(186, 186, 186);
+}
+.main .bagian-1 article .deskripsi {
+    width: 100%;
+}
+.main .bagian-1 article .deskripsi .berbeda{
+    width: 96%;
+    padding: 10px 2%;
+    height: 170px;
+    border-radius: 15px;
+    border: 1px solid rgb(186, 186, 186);
+}
+.main .bagian-1 .tombol{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.main .bagian-1 .tombol button {
+    margin-top: 10px;
+    height: 45px;
+    width: 120px;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: #212A31;
+    border: none;
+    color: white;
+}
+.main .bagian-1 .tombol button:hover{
+    background-color: #5B5A5D;
+}
+@media (max-width: 1200px){
+    .main {
+        top: 70px;
+        left: 260px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main {
+        left: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        left: 140px;
+    }
+    .main .bagian-1 {
+        width: 88%;
+        border-radius: 10px; 
+        padding: 30px 4%;
+        font-size: 16px;
+    }
+    .main .bagian-1 article {
+        display: flex;
+        flex-direction: column;
+    }
+    .main .bagian-1 article .input1 {
+        width: 100%;
+        margin-right: 5%;
+    }
+    .main .bagian-1 article .input2 {
+        width: 100%;
+        margin-right: 5%;
+    }
+    .main .bagian-1 article .input1 .sama,
+    .main .bagian-1 article .input2 .sama {
+    height: 30px;
+    }
+    .main .bagian-1 article .deskripsi .berbeda{
+    height: 160px;
+    }
+    .main .bagian-1 .tombol button {
+        height: 35px;
+        width: 100px;
+        border-radius: 15px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 480px) {
+    .main {
+        left: 90px;
+    }
+    .main .bagian-1 {
+        width: 90%;
+        padding: 20px 5%;
+        font-size: 14px;
+    }
+    .main .bagian-1 article .input1 {
+        width: 100%;
+    }
+    .main .bagian-1 article .input2 {
+        width: 100%;
+    }
+    .main .bagian-1 article .input1 .sama,
+    .main .bagian-1 article .input2 .sama {
+    height: 25px;
+    }
+}
+.main .bagian-2 {
+    width: 92%;
+    border-radius: 15px; 
+    background-color: white;
+    padding: 30px 4%;
+    font-size: 20px;
+    color: #5B5A5D;
+}
+.main .bagian-2 .hitam {
+    color: black;
+}
+.main .bagian-2 .border {
+    width: 100%;
+    border-bottom: 2px solid #212A31;
+}
+.main .bagian-2 .bentuk {
+    margin: 10px 0;
+    width: 60%;
+    height: 40px;
+    border: 1px solid #adadad;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+.main .bagian-2 .lingkaran {
+    width: 22px;
+    height: 22px;
+    border: 3px solid rgb(217, 217, 217);
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 100%;
+    margin: 0 10px;
+}
+.main .bagian-2 .lingkaran.clicked {
+    background-color: rgb(56, 226, 56);
+}
+.main .bagian-2 .bentuk span {
+    width: 88%;
+}
+.main .bagian-2 .bentuk .right{
+    width: 25px;
+    height: 25px;
+}
+
+@media (max-width: 768px) {
+    .main .bagian-2 {
+        width: 88%;
+        border-radius: 10px; 
+        padding: 30px 4%;
+        font-size: 16px;
+    }
+}
+@media (max-width: 480px) {
+    .main .bagian-2 {
+        width: 90%;
+        padding: 20px 5%;
+        font-size: 14px;
+    }
+}
