@@ -456,6 +456,7 @@
 }
 .main .bagian-2 article .verifikasi {
     color: rgb(156, 156, 156);
+    margin: 6px 0;
 }
 .main .bagian-2 article .center {
     display: flex;
@@ -496,6 +497,9 @@
     .main .bagian-2 article li {
         font-size: 16px;
     }
+    .main .bagian-2 article .verifikasi {
+        margin: 7px 0;
+    }
     .main .bagian-2 article .judul {
         font-size: 28px;
     }
@@ -503,6 +507,9 @@
 @media (max-width: 992px){
     .main .bagian-2 article li {
         font-size: 13px;
+    }
+    .main .bagian-2 article .verifikasi {
+        margin: 7.5px 0;
     }
     .main .bagian-2 article .judul {
         font-size: 24px;
