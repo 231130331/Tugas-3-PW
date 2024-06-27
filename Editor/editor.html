@@ -55,7 +55,6 @@
                     <span>Sekolah</span>
                 </div>
             </article>
-            </article>
             <article class="tengah2">                  
                     <div class="varian">
                         <div class="text3">
@@ -68,19 +67,19 @@
                         <div class="text_harga">
                             <p><b>Harga</b></p>
                         </div>
-                        <input type="text" placeholder="Rp.0.000">
+                        <input type="number" placeholder="Rp.0.000">
                         <br>
-                        <input type="text" placeholder="Rp.0.000">
+                        <input type="number" placeholder="Rp.0.000">
                     </div>
                     <div class="kuantitas">
                         <div class="text_kuantitas">
                             <p><b>Kuantitas</b></p>
                         </div>
                         <div class="kuantitas_ukuran">
-                            <span>0</span><img src="../Bahan CSS/Icons/resize.png" alt="resize">
+                            <input type="number" placeholder="0" step="1">
                         </div>
                         <div class="kuantitas_ukuran">
-                            <span>0</span><img src="../Bahan CSS/Icons/resize.png" alt="resize">
+                            <input type="number" placeholder="0" step="1">
                         </div>
                     </div>
             </article>
@@ -91,8 +90,7 @@
                 <div class="Inventory">
                     <span>Stok Barang</span>
                     <div class="kuantitas_Ukuran">
-                        <span>0</span>
-                        <img src="../Bahan CSS/Icons/resize.png" alt="resize">
+                        <input type="number" placeholder="0" step="1">
                     </div>
                 </div>
                 <input type="checkbox">Track Quantity
@@ -107,29 +105,37 @@
                 </div>
                 <div class="landing">
                     <div class="pemanggil">
-                        <div class="lingkaran"></div>
+                        <button id="button" class="lingkaran"></button>
                         <span>Landing </span>
                     </div>
                 </div>
                 <div class="storefront">
                     <div class="pemanggil">
-                        <div class="lingkaran"></div>
+                        <button id="button" class="lingkaran"></button>
                         <span>Store Front</span>
                     </div>
                 </div>
                 <div class="funnel">
                     <div class="pemanggil">
-                        <div class="lingkaran"></div>
+                        <button id="button" class="lingkaran"></button>
                         <span>Funnel</span>
                     </div>
                 </div>
                 <div class="form">
                     <div class="pemanggil">
-                        <div class="lingkaran"></div>
+                        <button id="button" class="lingkaran"></button>
                         <span>Form Order</span>
                     </div>
                 </div>
             </article>
+            <script>
+                const  button = document.querySelectorAll("button");
+                button.forEach(function(button) {
+                    button.addEventListener('click', function() {
+                        button.classList.toggle('clicked');
+                    });
+                });
+            </script>
             <article class="kanantengah">
                 <b class="font-size">Gambar</b>
                 <div class="gambar">

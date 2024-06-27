@@ -129,7 +129,7 @@ section article {
 .content2 .tengah2 .harga{
     margin-right: 5%;
 }
-.content2 .tengah2 .harga input[type="text"]{
+.content2 .tengah2 .harga input[type="number"]{
     height: 22px;
     width: 100px;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -137,16 +137,13 @@ section article {
     border-radius: 5px;
     margin-bottom: 5px;
 }
-
-.content2 .kuantitas_ukuran{
-    height: 24px;
+.content2 .tengah2 .kuantitas_ukuran [type="number"]{
+    height: 22px;
     width: 100px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     margin-bottom: 5px;
-    display: flex;
-    align-items: center;
 }
 .content2 .kuantitas_ukuran span {
     width: 80%;
@@ -156,16 +153,13 @@ section article {
     width: 7px;
     height: 15px;
 }
-.content2 .kuantitas_Ukuran{
-    height: 24px;
+.content2 .tengahbawah .kuantitas_Ukuran [type="number"]{
+    height: 22px;
     width: 100px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     margin-bottom: 5px;
-    float: right;
-    display: flex;
-    align-items: center;
 }
 .content2 .tengahbawah .Inventory{
     border-bottom: 1px solid black;
@@ -218,16 +212,15 @@ section article {
     align-items: center;
 }
 .content3 .lingkaran {
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
     float: left;
     border: 3px solid rgb(217, 217, 217);
     background-color: rgba(217, 217, 217, 1);
     border-radius: 100%;
     margin: 0 10px;
 }
-
-.content3 .lingkaran:hover{
+.kananatas .lingkaran.clicked {
     background-color: rgb(56, 226, 56);
 }
 
@@ -305,6 +298,7 @@ section article {
     margin-right: 20px;
     float: right;
 }
+
 .content3 .kirim{
     width: 110px;
     height: 30px;
