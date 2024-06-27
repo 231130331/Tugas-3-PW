@@ -116,6 +116,9 @@
     background-color: black;
     border-radius: 5px;
 }
+.nav .item .start:hover {
+    background-color: rgb(66, 66, 66);
+}
 .nav .item .start a {
     color: white;
 }
@@ -132,7 +135,9 @@
     text-decoration: underline;
     border: 1px solid black;
 }
-
+.nav .item .login:hover {
+    background-color: rgb(220, 220, 220);
+}
 @media (max-width: 1200px) {
     span{
         display: none;
@@ -266,7 +271,9 @@
     font-size: 24px;
     margin-left:18.5%;
 }
-
+.main .bagian-1 .input .klik:hover {
+    background-color: rgb(176, 177, 78);
+}
 @media (max-width: 1200px) {
     /*bagian-1*/
     .main .bagian-1 .kata{
@@ -320,12 +327,12 @@
         align-items: center;
     }
     .main .bagian-1 .input .enter {
-        width: 40%;
+        width: 60%;
         margin-bottom: 10px;
-        font-size: 16px;
+        font-size: 15px;
     }
     .main .bagian-1 .input .klik{
-        width: 41.3%;
+        width: 61.3%;
         margin-left: 0;
     }
     .main .bagian-1 .pemanis{
@@ -339,6 +346,7 @@
     }
     .main .bagian-1 .input .enter {
         width: 60%;
+        font-size: 14px;
     }
     .main .bagian-1 .input .klik {
         width: 61.3%;
@@ -671,7 +679,9 @@
     line-height: 70px;
     background-color: rgb(156, 159, 18);
 }
-
+.main .bagian-6 .mulai p:hover {
+    background-color: rgb(176, 177, 78);
+}
 @media (max-width: 1200px) {
     /*bagian-6*/
     .main .bagian-6 .mulai p {

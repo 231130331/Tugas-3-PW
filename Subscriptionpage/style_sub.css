@@ -1,7 +1,11 @@
 .container{
     width: 1440px;
 }
-
+@media (max-width: 1440px) {
+    .container{
+        width: 100%;
+    }
+}
 /*nav*/
 .nav{
     width: 100%;
@@ -10,179 +14,291 @@
     left: 0;
     position: fixed;
     background-color: white;
-    z-index: 9999;
-    transition: width 0.3s ease;
+    z-index: 9998;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    font-family:'inter', sans-serif;
 }
 .nav .item {
-    list-style-type: none;
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 .nav .item li {
-    margin-left: 20px;
+    list-style-type: none;
+    margin-right: 20px;
     font-size: 22px;
-    font-weight: bold;
-    display: inline-block;
 }
 .nav li a {
     text-decoration: none;
     color: black;
 }
+.nav .item .inline {
+    display: flex;
+    align-items: center;
+}
 .nav .item .bendera {
     width: 26px;
-    height: 26px;
+    height: 28px;
+    margin-right: 5px;
 }
-.nav .item .bottom {
-    margin-left: 10px;
+.nav .item .bottom{
+    padding-top: 5px;
     width: 26px;
-    height: 26px;
+    height: 30px;
 }
 .nav .item .start{
-    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
     background-color: black;
     border-radius: 5px;
 }
-.nav .item .box {
-    width: 24.5%;
+.nav .item .start:hover {
+    background-color: rgb(66, 66, 66);
 }
 .nav .item .start a {
     color: white;
 }
-
+.nav .item .box {
+    width: 20%;
+}
 .nav .item .login {
-    padding: 5px 10px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
     border-radius: 5px;
     text-decoration: underline;
     border: 1px solid black;
 }
+
+.nav .item .login:hover {
+    background-color: rgb(220, 220, 220);
+}
 @media (max-width: 1200px) {
-    span{
+    .hapus{
         display: none;
     }
-    .nav .item li {
-        margin-left: 18px;
-        font-size: 18px;
-    }
-    .nav .item .box {
-        width: 43%;
+    .nav .item .start{
+        width: 60px;
     }
 }
 
 @media (max-width: 992px) {
-    .nav .item .box {
-        width: 25%;
-    }
     .nav .item li {
-        margin-left: 14px;
-        font-size: 16px;
+        font-size: 18px;
     }
 }
-
 @media (max-width: 768px) {
+    .nav {
+        height: 70px;
+    }
     .nav .item .box {
-        width: 15%;
+        display: none;
     }   
     .nav .item li {
-        margin-left: 10px;
-        font-size: 15px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    .nav .item .bendera {
+        width: 22px;
+        height: 24px;
+        margin-right: 5px;
+    }
+    .nav .item .bottom {
+        margin-right: 10px;
+        width: 20px;
+        height: 23px;
     }
 }
-@media (max-width: 600px) {
-    .nav .item .box {
-        width: 0;
-    }   
+@media (max-width: 480px) {
     .nav .item li {
-        margin-left: 10px;
-        font-size: 13px;
+        margin-right: 5px;
+        font-size: 12px;
+    }
+    .nav .item {
+        justify-content:left;
+    }
+    .nav .item .login {
+        height: 30px;
+        width: 50px;
+    }
+    .nav .item .bendera {
+        width: 18px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    .nav .item .bottom {
+        margin-right: 5px;
+        width: 16px;
+        height: 20px;
+    }
+    .nav .item .start {
+        display: none;
+    }
+    .nav .item .bendera {
+        width: 18px;
+        height: 20px;
+    }
+    .nav .item .bottom {
+        margin-right: 5px;
+        width: 16px;
+        height: 19px;
     }
 }
 
 /*main*/
 .main{
     position: relative;
-    top: 90px;
+    top: 100px;
     left: 0;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(238, 239, 240);
     font-family:'inter', sans-serif;
-    display: flex;
-    justify-content: center;
+    padding: 40px 0;
 }
 .main section {
-    margin: 60px 20px;
-    width: 390px;
-    height: 720px;
+    width: 22%;
     background-color: white;
     border: 2px solid rgb(127, 127, 127);
     border-radius: 15px;
-    padding: 40px 30px;
-    float: left;
+    margin-right: 20px;
+    padding: 0 3%;
+    padding-bottom: 20px;
 }
-
-.main section h1 {
-    font-size: 32px;
+.main .personal {
+    padding-bottom: 25px;
+}
+.main section p {
+    font-weight: bold;
+    font-size: 26px;
+    width: 100%;
 }
 .main section .bagian-1 .kata {
-    font-size: 24px;
+    font-size: 16px;
 }
 .main section .bagian-2 {
     width: 100%;
-    height: 62px;
-    padding-bottom: 10px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
     border-bottom: 1px solid rgb(202, 202, 202);
 }
 .main section .bagian-2 .angka {
-    font-size: 64px;
-    font-weight: bold;
-    float: left;
-    margin-right: 10px;
+    font-size: 38px;
+    font-weight: 400;
 }
 .main section .bagian-2 .uang {
-    font-size: 32px;
-    float: left;
-    height: 32px;
-    margin-top: 30px;
-    margin-right: 10px;
+    font-size: 28px;
+    margin: 10px 5px 0 5px;
 }
 .main section .bagian-2 .waktu {
     font-size: 18px;
     color: rgb(156, 156, 156);
-    float: left;
-    height: 40px;
-    margin-top: 22px;
-    font-weight: 600;
+    font-weight: bold;
 }
 .main section .bagian-3 .kata {
-    font-size: 18px;
+    font-size: 16px;
 }
 .main section img {
-    float: left;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     margin-right: 10px;
 }
 
 .main section .bagian-4 li{
     list-style-type: none;
-    padding-bottom: 15px;
-    font-size: 18px;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 .main .personal .bagian-4 {
     margin-bottom: 35px;
 }
 
 .main section .bagian-5 {
+    width: 100%;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.main section .bagian-5 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
     font-size: 18px;
-    width: 290px;
-    height: 85px;
+    height: 75px;
     border-radius: 30px;
     background-color: rgb(255, 210, 51);
-    line-height: 85px;
-    text-align: center;
-    margin: 0 auto;
+}
+.main section .bagian-5 span:hover {
+    background-color: darkorange;
+}
+@media (max-width: 1200px) {
+    .main section {
+        margin-right: 0;
+    }
+    .main section .bagian-1 .kata {
+        font-size: 15px;
+    }
+}
+@media (max-width: 992px) {
+    .main {
+        display:flex;
+    }
+    .main section{
+        width: 26%;
+    }
+    .main section .bagian-1 .kata {
+        font-size: 14px;
+    }
+    .main section .bagian-4 li{
+        font-size: 14px;
+    }
+    .main section img {
+        width: 14px;
+        height: 14px;
+        margin-right: 8px;
+    }
+}
+@media (max-width: 768px) {
+    .main {
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+    }
+    .main section {
+        margin-top:30px;
+        width: 70%;
+    }
+    .main section .bagian-1 .kata {
+        font-size: 16px;
+    }
+    .main section .bagian-4 li{
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+    .main section {
+        width: 70%;
+    }
+    .main section .bagian-1 .kata {
+        font-size: 15px;
+    }
+    .main section .bagian-4 li{
+        font-size: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .main section {
+        width: 90%;
+    }
 }
