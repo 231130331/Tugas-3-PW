@@ -67,9 +67,9 @@
                         <div class="text_harga">
                             <p><b>Harga</b></p>
                         </div>
-                        <input type="number" placeholder="Rp.0.000">
+                        <input type="number" placeholder="Rp.0.000" step="1000">
                         <br>
-                        <input type="number" placeholder="Rp.0.000">
+                        <input type="number" placeholder="Rp.0.000" step="1000">
                     </div>
                     <div class="kuantitas">
                         <div class="text_kuantitas">
@@ -129,12 +129,21 @@
                 </div>
             </article>
             <script>
-                const  button = document.querySelectorAll("button");
-                button.forEach(function(button) {
-                    button.addEventListener('click', function() {
-                        button.classList.toggle('clicked');
-                    });
+                const  buttons = document.querySelectorAll("button");
+                if (document.querySelectorAll('.button.clicked').length === 0) {
+                    buttons[0].classList.add('clicked');
+                }
+                buttons.forEach(function(button){
+
+                button.addEventListener('click', function() {
+
+                buttons.forEach(function(btn) {
+                    btn.classList.remove('clicked');
                 });
+
+                button.classList.add('clicked');
+                });
+            });
             </script>
             <article class="kanantengah">
                 <b class="font-size">Gambar</b>

@@ -91,8 +91,15 @@
             <script>
                 const  button = document.querySelectorAll("button");
                 button.forEach(function(button) {
+
                     button.addEventListener('click', function() {
                         button.classList.toggle('clicked');
+                    if (button.classList.contains('clicked')) {
+                        console.log("Toko anda telah online")
+                    } else {
+                        alert('apakah anda yakin ingin mematikan Toko ini ?');
+                    }
+                    notification.style.display = 'block';
                     });
                 });
             </script>
