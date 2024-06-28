@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="teamspage.css">
+</head>
+<body class="container">
+    <header class="header">
+        <img class="logo" src="../Bahan CSS/Userhomepage/logo.png" alt="logo">
+        <span class="merek">E-UMKM</span>
+        <section class="latar">
+            <img src="../Bahan CSS/Userhomepage/search.png" alt="search">
+            <input type="search" placeholder="search">
+        </section>
+        <section class="img">
+            <img class="bell" src="../Bahan CSS/Userhomepage/bell.png" alt="bell">
+        </section>
+        <section class="akun">
+            <a href="profile">
+                <span class="profil">j</span>
+                <span class="kata">Juan Uliana</span>
+            </a>
+        </section>
+    </header>
+   <nav class="nav">
+        <section class="channel">
+            <span class="fitur">Home Channel</span><img class="jomblo" src="../Bahan CSS/Userhomepage/right.png" alt="right">
+            <li><a href="userhomepage.html"><img class="gambar" src="../Bahan CSS/Userhomepage/home.png" alt="home"><span>Home</span></a></li>
+            <li class="team"><a href="Teams"><img class="gambar" src="../Bahan CSS/Userhomepage/people.png" alt="people"><span>Teams</span></a></li>
+            <li><a href="Orders"><img class="gambar" src="../Bahan CSS/Userhomepage/label.png" alt="label"><span>Orders</span></a></li>
+            <li><a href="Laporan"><img class="gambar" src="../Bahan CSS/Userhomepage/chart bar.png" alt="chart bar"><span>Laporan</span></a></li>
+        </section>
+        <section class="channel">
+            <span class="fitur">Sales Channel</span><img class="jomblo" src="../Bahan CSS/Userhomepage/right.png" alt="right">
+            <li><a href="TokoOnline"><img class="gambar" src="../Bahan CSS/Userhomepage/shop.png" alt="toko"><span>Toko Online</span></a></li>
+            <li class="Tema"><a href="#">Tema</a></li>
+            <li class="Editor"><a href="../Editor/editor.html">Editor</a></li>
+        </section>
+        <section class="box"></section>
+        <section class="bantuan">
+            <li class="help"><a href="#"><img class="gambar" src="../Bahan CSS/Userhomepage/help.png" alt="bantuan"><span>Bantuan</span></a></li> 
+        </section>
+    </nav>
+    <main class="main">
+        <h1>Your team</h1>
+        <section class="bagian-1">
+            <button id="button">
+                All users
+            </button>
+            <button id="button">
+                Admins
+            </button>
+            <button id="button">
+                Managers
+            </button>
+            <button id="button">
+                + Posisi
+            </button>
+            <button id="button" class="undang">
+                + Undang
+            </button>
+        </section>
+        <script>
+            const  buttons = document.querySelectorAll("button");
+                if (document.querySelectorAll('.button.clicked').length === 0) {
+                buttons[0].classList.add('clicked');
+            }
+            buttons.forEach(function(button){
+                button.addEventListener('click', function() {
+                buttons.forEach(function(btn) {
+                    btn.classList.remove('clicked');
+                });
+                button.classList.add('clicked');
+                });
+            });
+        </script>
+        <section class="bagian-2">
+            <div class="khusus">
+                <div class="total">
+                    <p>Total : 5 </p>
+                </div>
+                <div class="posisi">
+                    <p>Posisi</p>
+                </div>
+                <div class="akses">
+                    <p>Akses</p>
+                </div>
+            </div>
+            <article>
+                <img src="../Bahan CSS/teamspage/gambar-1.png" alt="gambar-1">
+                <div class="nama">
+                    <p>Jamal udin</p>
+                </div>
+                <select name="pilih" id="select">
+                    <option>Manager</option>
+                    <option>Admin</option>
+                    <option>Karyawan</option>
+                </select>
+                <select id="select">
+                    <option>Semua</option>
+                    <option>Tidak ada</option>
+                </select>
+                <button>
+                    <img class="massage" src="../Bahan CSS/teamspage/massage.png" alt="massage">
+                </button>
+                <button>
+                    <img src="../Bahan CSS/teamspage/hapus.png" alt="clear">
+                </button>
+            </article>
+            <article>
+                <img src="../Bahan CSS/teamspage/gambar-2.png" alt="gambar-2">
+                <div class="nama">
+                    <p>Juan Uliana</p>
+                </div>
+                <select name="pilih" id="select">
+                    <option>Manager</option>
+                    <option>Admin</option>
+                    <option>Karyawan</option>
+                </select>
+                <select id="select">
+                    <option>Semua</option>
+                    <option>Tidak ada</option>
+                </select>
+                <button>
+                    <img class="massage"  src="../Bahan CSS/teamspage/massage.png" alt="massage">
+                </button>
+                <button>
+                    <img src="../Bahan CSS/teamspage/hapus.png" alt="clear">
+                </button>
+            </article>
+            <article>
+                <img src="../Bahan CSS/teamspage/gambar-3.png" alt="gambar-3">
+                <div class="nama">
+                    <p>Wak Kakap</p>
+                </div>
+                <select name="pilih" id="select">
+                    <option>Manager</option>
+                    <option>Admin</option>
+                    <option>Karyawan</option>
+                </select>
+                <select id="select">
+                    <option>Semua</option>
+                    <option>Tidak ada</option>
+                </select>
+                <button>
+                    <img class="massage"  src="../Bahan CSS/teamspage/massage.png" alt="massage">
+                </button>
+                <button>
+                    <img src="../Bahan CSS/teamspage/hapus.png" alt="clear">
+                </button>
+            </article>
+            <article>
+                <img src="../Bahan CSS/teamspage/gambar-4.png" alt="gambar-4">
+                <div class="nama">
+                    <p>Wak pang</p>
+                </div>
+                <select name="pilih" id="select">
+                    <option>Manager</option>
+                    <option>Admin</option>
+                    <option>Karyawan</option>
+                </select>
+                <select id="select">
+                    <option>Semua</option>
+                    <option>Tidak ada</option>
+                </select>
+                <button>
+                    <img class="massage"  src="../Bahan CSS/teamspage/massage.png" alt="massage">
+                </button>
+                <button>
+                    <img src="../Bahan CSS/teamspage/hapus.png" alt="clear">
+                </button>
+            </article>
+            <article class="bawah">
+                <img src="../Bahan CSS/teamspage/gambar-5.png" alt="gambar-5">
+                <div class="nama">
+                    <p>Tante Cuy</p>
+                </div>
+                <select name="pilih" id="select">
+                    <option>Manager</option>
+                    <option>Admin</option>
+                    <option>Karyawan</option>
+                </select>
+                <select id="select">
+                    <option>Semua</option>
+                    <option>Tidak ada</option>
+                </select>
+                <button>
+                    <img class="massage"  src="../Bahan CSS/teamspage/massage.png" alt="massage">
+                </button>
+                <button>
+                    <img src="../Bahan CSS/teamspage/hapus.png" alt="clear">
+                </button>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
