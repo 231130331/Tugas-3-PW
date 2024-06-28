@@ -259,11 +259,9 @@
     font-weight: bold;
     background-color: rgb(156, 159, 18);
     width: 18.8%;
+    display: flex;
     text-align: center;
-}
-.main .bagian-1 .input .klik a {
-    text-decoration: none;
-    color: white;
+    justify-content: center;
     font-size:  24px;
 }
 .main .bagian-1 .pemanis{
@@ -282,14 +280,6 @@
     .main .bagian-1 .input {
         font-size: 21px;
     }
-    .main .bagian-1 .input .enter {
-        height: 70px;
-        line-height: 70px;
-    }
-    .main .bagian-1 .input .klik {
-        height: 76px;
-        line-height: 76px;
-    }
     .main .bagian-1 .pemanis {
         font-size: 21px;
     }
@@ -301,14 +291,6 @@
     }
     .main .bagian-1 .input {
         font-size: 18px;
-    }
-    .main .bagian-1 .input .enter, .klik {
-        height: 70px;
-        line-height: 70px;
-    }
-    .main .bagian-1 .input .klik {
-        height: 76px;
-        line-height: 76px;
     }
 }
 @media (max-width: 768px) {
