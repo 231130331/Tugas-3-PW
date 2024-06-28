@@ -109,9 +109,14 @@
             <article class="kata">
                 Jalankan bisnis anda hari ini!
             </article>
-            <article class="mulai">
+            <button id="tombol" class="mulai">
                 <p>Get Started</p>
-            </article>
+            </button>
+            <script>
+                document.getElementById("tombol").addEventListener("click", function(event){
+                    location.replace("Bahan CSS/loginpage.html");
+                });
+            </script>
         </section>
     </main>
     <footer class="footer">
